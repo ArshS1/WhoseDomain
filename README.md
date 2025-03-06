@@ -4,12 +4,12 @@
 WhoseDomain is an automated system for **domain and website attribution** that goes beyond traditional WHOIS queries. WHOIS-based domain ownership identification is becoming increasingly unreliable due to privacy protection services and data redaction (e.g., GDPR). This project leverages **web scraping, TLS certificate analysis, and natural language processing (NLP)** to extract ownership information from multiple sources, providing a **more accurate and scalable** method for identifying domain owners.  
 
 ## **Features**  
-✔️ **Web Scraping for Ownership Indicators** – Extracts metadata, privacy policies, terms of service (TOS), and copyright information.  
-✔️ **TLS Certificate Analysis** – Breaks down SSL/TLS certificates to identify organizational ownership.  
-✔️ **Named Entity Recognition (NER) with NLP** – Extracts company names, email addresses, and social media links from website content.  
-✔️ **Domain Correlation** – Links related domains using passive DNS and TLS Subject Alternative Names (SANs).  
-✔️ **Automated Ranking Algorithm** – Prioritizes the most reliable ownership indicators while filtering out third-party references.  
-✔️ **Attribution Graph Generation** – Provides a transparent visualization of ownership discovery.  
+- **Web Scraping for Ownership Indicators** – Extracts metadata, privacy policies, terms of service (TOS), and copyright information.  
+- **TLS Certificate Analysis** – Breaks down SSL/TLS certificates to identify organizational ownership.
+-  **Named Entity Recognition (NER) with NLP** – Extracts company names, email addresses, and social media links from website content.  
+-  **Domain Correlation** – Links related domains using passive DNS and TLS Subject Alternative Names (SANs).  
+-  **Automated Ranking Algorithm** – Prioritizes the most reliable ownership indicators while filtering out third-party references.  
+-  **Attribution Graph Generation** – Provides a transparent visualization of ownership discovery.  
 
 ## **How It Works**  
 ### 1. **Data Collection**  
