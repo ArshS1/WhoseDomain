@@ -1,0 +1,8 @@
+# How to Run
+# Save all three files in the same directory.
+
+# Install dependencies:
+# pip install whois requests beautifulsoup4
+
+# Run the main script:
+# python whoseDomain.py
