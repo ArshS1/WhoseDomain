@@ -32,11 +32,18 @@ if __name__ == "__main__":
 
     print("Docker image pulled successfully.")
 
-    # Get user input
-    domain_or_url = input("Enter a domain or URL to analyze: ").strip()
+    # Open the domains file and read line by line
+    domains_file_path = "./domains.txt"  # Adjust this to your file path
+
+    with open(domains_file_path, "r") as file:
+        domains = file.readlines()
+
+    # Get user input for iterations
     iterations = input("Enter max iterations (default 50): ").strip() or "50"
 
-    print(f"Running WhoseDomain for {domain_or_url}...")
-
-    # Run WhoseDomain
-    run_whosedomain(domain_or_url, iterations)
+    # Loop through domains and run WhoseDomain for each
+    for domain_or_url in domains:
+        domain_or_url = domain_or_url.strip()  # Remove any extra whitespace or newline
+        if domain_or_url:  # Ensure the line is not empty
+            print(f"Running WhoseDomain for {domain_or_url}...")
+            run_whosedomain(domain_or_url, iterations)

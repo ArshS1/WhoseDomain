@@ -1,137 +1,46 @@
-whosedomain.py -c data/config.ini -i prabhjottsk.com -n 50
+whosedomain.py -c data/config.ini -i Walmart.com -n 50
 Parsing config file: data/config.ini
-Stop when first finding: {'organization', 'identity', 'personName'}
-Datasets: Framework, Whois, Certs, VirusTotal, Reporter, Guesser
+Stop when first finding: {'identity', 'organization', 'personName'}
+Datasets: Framework, Certs, VirusTotal, Whois, Reporter, Guesser
 Exploring from 1 seeds
+Expanding on generic seed IOC: fqdn	walmart.com
 Max iterations: 50
-#000 Expanding: fqdn	prabhjottsk.com
+#000 Expanding: fqdn	walmart.com
   Queried Framework
-    Attr: esld	prabhjottsk.com
+    Attr: esld	walmart.com
   Queried Guesser
-    Attr: server	76.76.21.61:443/tcp
-    Attr: server	76.76.21.61:80/tcp
-  server	76.76.21.61:80/tcp
-    Attr: guessedUrl	http://prabhjottsk.com/
-    Attr: guessedUrl	http://www.prabhjottsk.com/
-  server	76.76.21.61:443/tcp
-    Attr: guessedUrl	https://prabhjottsk.com/
-    Attr: guessedUrl	https://www.prabhjottsk.com/
-    Attr: securityUrl	https://prabhjottsk.com/.well-known/security.txt
-    Attr: securityUrl	https://prabhjottsk.com/security.txt
+    Attr: server	23.45.148.180:443/tcp
+    Attr: server	23.45.148.180:80/tcp
+  server	23.45.148.180:80/tcp
+    Attr: guessedUrl	http://walmart.com/
+    Attr: guessedUrl	http://www.walmart.com/
+  server	23.45.148.180:443/tcp
+    Attr: guessedUrl	https://walmart.com/
+    Attr: guessedUrl	https://www.walmart.com/
+    Attr: securityUrl	https://walmart.com/.well-known/security.txt
+    Attr: securityUrl	https://walmart.com/security.txt
   Queried Certs
-    Attr: server	76.76.21.61:443/tcp
-  server	76.76.21.61:443/tcp
-    Attr: certDerSha1	B18C421F95350926398D1661AAAE703A9562238D
-  certDerSha1	B18C421F95350926398D1661AAAE703A9562238D
-    Attr: certSubjectDN	CN=prabhjottsk.com
-  certSubjectDN	CN=prabhjottsk.com
-    Attr: fqdn	prabhjottsk.com
-#001 Expanding: server	76.76.21.61:443/tcp
-  Queried Framework
-    Attr: ip	76.76.21.61
-  Queried Certs
-    Attr: certDerSha1	0C8F9E3919835176E232A417EF47DD80A8123375
-    Attr: server	76.76.21.61:443/tcp
-  certDerSha1	0C8F9E3919835176E232A417EF47DD80A8123375
-    Attr: certSubjectDN	CN=no-sni.vercel-infra.com
-  certSubjectDN	CN=no-sni.vercel-infra.com
-    Attr: fqdn	no-sni.vercel-infra.com
-#002 Expanding: server	76.76.21.61:80/tcp
-  Queried Framework
-    Attr: ip	76.76.21.61
-    No valid certificate for 76.76.21.61:80 
-  Queried Certs
-#003 Expanding: guessedUrl	http://prabhjottsk.com/
-Downloaded 14267 bytes from http://prabhjottsk.com/ into /app/attribution-master/framework/downloads_dir/9d57e8c2267f1fbf8d4a2120eb16df353baa4c7a1488d6b28556eb83921ee9f1.download
-  Queried Reporter
-    Attr: url	https://prabhjottsk.com/
-  url	https://prabhjottsk.com/
-    Attr: url	https://www.prabhjottsk.com/
-  url	https://www.prabhjottsk.com/
-    Attr: file	9d57e8c2267f1fbf8d4a2120eb16df353baa4c7a1488d6b28556eb83921ee9f1
-#004 Expanding: guessedUrl	http://www.prabhjottsk.com/
-Downloaded 14267 bytes from http://www.prabhjottsk.com/ into /app/attribution-master/framework/downloads_dir/9d57e8c2267f1fbf8d4a2120eb16df353baa4c7a1488d6b28556eb83921ee9f1.download
-  Queried Reporter
-    Attr: url	https://www.prabhjottsk.com/
-  url	https://www.prabhjottsk.com/
-    Attr: file	9d57e8c2267f1fbf8d4a2120eb16df353baa4c7a1488d6b28556eb83921ee9f1
-#005 Expanding: guessedUrl	https://prabhjottsk.com/
-  Found url in downloads: 200
-  Queried Reporter
-    Attr: url	https://www.prabhjottsk.com/
-  url	https://www.prabhjottsk.com/
-    Attr: file	9d57e8c2267f1fbf8d4a2120eb16df353baa4c7a1488d6b28556eb83921ee9f1
-#006 Expanding: guessedUrl	https://www.prabhjottsk.com/
-  Found url in downloads: 200
-  Queried Reporter
-    Attr: file	9d57e8c2267f1fbf8d4a2120eb16df353baa4c7a1488d6b28556eb83921ee9f1
-#007 Expanding: securityUrl	https://prabhjottsk.com/.well-known/security.txt
-Failed to download https://prabhjottsk.com/.well-known/security.txt with status code: 404
-Failed to download https://prabhjottsk.com/.well-known/security.txt with status code: 404
-  Queried Reporter
-#008 Expanding: securityUrl	https://prabhjottsk.com/security.txt
-Failed to download https://prabhjottsk.com/security.txt with status code: 404
-Failed to download https://prabhjottsk.com/security.txt with status code: 404
-  Queried Reporter
-#009 Expanding: esld	prabhjottsk.com
-  Queried Guesser
-    Attr: server	76.76.21.61:443/tcp
-    Attr: server	76.76.21.61:80/tcp
-  server	76.76.21.61:80/tcp
-    Attr: guessedUrl	http://prabhjottsk.com/
-    Attr: guessedUrl	http://www.prabhjottsk.com/
-  server	76.76.21.61:443/tcp
-    Attr: guessedUrl	https://prabhjottsk.com/
-    Attr: guessedUrl	https://www.prabhjottsk.com/
-    Attr: securityUrl	https://prabhjottsk.com/.well-known/security.txt
-    Attr: securityUrl	https://prabhjottsk.com/security.txt
-  Queried Whois
-  Queried VirusTotal
-    Attr: fqdn	hw1.prabhjottsk.com
-    Attr: fqdn	prabhjottsk.com
-    Attr: fqdn	www.prabhjottsk.com
-#010 Expanding: certDerSha1	B18C421F95350926398D1661AAAE703A9562238D
-  Queried Certs
-#011 Expanding: certDerSha1	0C8F9E3919835176E232A417EF47DD80A8123375
-  Queried Certs
-#012 Expanding: fqdn	no-sni.vercel-infra.com
-  Queried Framework
-    Attr: esld	vercel-infra.com
-  Queried Guesser
-    Attr: server	66.33.60.130:443/tcp
-    Attr: server	66.33.60.130:80/tcp
-  server	66.33.60.130:80/tcp
-    Attr: guessedUrl	http://no-sni.vercel-infra.com/
-    Attr: guessedUrl	http://www.no-sni.vercel-infra.com/
-  server	66.33.60.130:443/tcp
-    Attr: guessedUrl	https://no-sni.vercel-infra.com/
-    Attr: guessedUrl	https://www.no-sni.vercel-infra.com/
-    Attr: securityUrl	https://no-sni.vercel-infra.com/.well-known/security.txt
-    Attr: securityUrl	https://no-sni.vercel-infra.com/security.txt
-  Queried Certs
-    Attr: server	66.33.60.130:443/tcp
-  server	66.33.60.130:443/tcp
-    Attr: certDerSha1	0C8F9E3919835176E232A417EF47DD80A8123375
-  certDerSha1	0C8F9E3919835176E232A417EF47DD80A8123375
-    Attr: certSubjectDN	CN=no-sni.vercel-infra.com
-  certSubjectDN	CN=no-sni.vercel-infra.com
-    Attr: fqdn	no-sni.vercel-infra.com
-#013 Expanding: url	https://prabhjottsk.com/
-  Queried Framework
-    Attr: fqdn	prabhjottsk.com
-  fqdn	prabhjottsk.com
-    Attr: esld	prabhjottsk.com
-Downloaded 14267 bytes from https://prabhjottsk.com/ into /app/attribution-master/framework/downloads_dir/9d57e8c2267f1fbf8d4a2120eb16df353baa4c7a1488d6b28556eb83921ee9f1.download
-  Queried Reporter
-    Attr: url	https://www.prabhjottsk.com/
-  url	https://www.prabhjottsk.com/
-    Attr: file	9d57e8c2267f1fbf8d4a2120eb16df353baa4c7a1488d6b28556eb83921ee9f1
-#014 Expanding: url	https://www.prabhjottsk.com/
-  Found url in downloads: 200
-  Queried Reporter
-    Attr: file	9d57e8c2267f1fbf8d4a2120eb16df353baa4c7a1488d6b28556eb83921ee9f1
-  Queried Framework
-    Attr: fqdn	www.prabhjottsk.com
-  fqdn	www.prabhjottsk.com
-    Attr: esld	prabhjottsk.com
-#015 Expanding: file	9d57e8c2267f1fbf8d4a2120eb16df353baa4c7a1488d6b28556eb83921ee9f1
+    Attr: server	23.45.148.180:443/tcp
+  server	23.45.148.180:443/tcp
+    Attr: certDerSha1	BF337369061BCCED1F6E6000367CA2339B31469B
+  certDerSha1	BF337369061BCCED1F6E6000367CA2339B31469B
+    Attr: certSubjectDN	C=US | ST=Arkansas | L=Bentonville | O=Walmart Inc. | CN=www.walmart.com
+    Attr: fqdn	beta.walmart.com
+    Attr: fqdn	grocery.walmart.com
+    Attr: fqdn	walmart.com
+    Attr: fqdn	walmart.pharmacy
+    Attr: fqdn	walmartspecialty.pharmacy
+    Attr: fqdn	www.wal-mart.com
+  certSubjectDN	C=US | ST=Arkansas | L=Bentonville | O=Walmart Inc. | CN=www.walmart.com
+    Attr: fqdn	www.walmart.com
+    Attr: organization	Walmart Inc.
+Skipping generic IOC: fqdn	www.wal-mart.com
+Finishing after finding IOC of type {'identity', 'organization', 'personName'}
+Queries to dataset Framework: 1
+Queries to dataset Certs: 1
+Queries to dataset VirusTotal: 0
+Queries to dataset Whois: 0
+Queries to dataset Reporter: 0
+Queries to dataset Guesser: 1
+Remaining IOCs in worklist: 15
+Runtime: 0.16 seconds
