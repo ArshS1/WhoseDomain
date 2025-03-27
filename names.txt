@@ -1,0 +1,120 @@
+# People found
+
+- 2021–2025
+- 3.90 GPA
+- API
+- About
+- About Me
+- Alysa
+- Alysa Vega
+- App
+- Bootstrap
+- C++
+- C++
+SQL
+- CSS
+- CSS3
+- CUNY Tech Prep
+- Capstone
+- Cheatdle
+- College
+- Communication
+- Computer
+- Computer Architecture
+- Data
+- Data Science Fellow
+- Data Structures
+- Database Management
+- Dec
+- Design
+- Developer
+- Django
+- Education
+- Experience
+- Fellow
+- Firebase
+- Flask
+- Full-Stack
+- Game Design
+- Gameboxd
+- Git
+- GitHub
+- Glide
+- HTML
+- HTML5
+- Hugging Face
+- Hunter
+- Information
+- Information Theory
+- Intern
+- JavaScript
+- July
+- July 2023
+- Jupyter
+- Jupyter Notebooks
+- Jupyter Notebooks
+Pandas
+- Kodely
+- Kodely Leader
+- LLMs
+- Languages
+- Leadership
+- LeetCode
+- LinkedIn
+- Links
+- Machine Learning
+- Media
+- Metroidvanias
+- MySQL
+- MyWebAR
+- Native
+- New
+- New York, NY
+- Notebooks
+- NumPy
+- Operating Systems
+- Pandas
+- PantryPlatters
+- Prep
+- Present
+- Problem Solving
+- Projects
+- Pygame
+- Python
+- PythonAnywhere
+- React
+- React Native
+- Remote
+- SQL
+- SQLAlchemy
+- Science
+- Scikit
+- Scikit-learn
+- Skills
+- Streamlit
+- Studies
+- Tech
+- Tech Developer Intern
+- Theory
+- Tools
+Git
+Flask
+- TypeScript
+- Vega
+- Wordle
+- Wordpress
+- Worked
+- York
+- an experienced
+- currently open
+- incredibly passionate
+
+
+# Pages crawled (7):
+- https://alyliann.github.io/
+- https://alyliann.github.io/#about
+- https://alyliann.github.io/#education
+- https://alyliann.github.io/#experience
+- https://alyliann.github.io/#links
+- https://alyliann.github.io/#projects
+- https://alyliann.github.io/#skills

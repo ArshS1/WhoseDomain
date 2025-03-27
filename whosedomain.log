@@ -1,46 +1,89 @@
-whosedomain.py -c data/config.ini -i Walmart.com -n 50
+whosedomain.py -c data/config.ini -i Amazon.com -n 50
 Parsing config file: data/config.ini
-Stop when first finding: {'identity', 'organization', 'personName'}
-Datasets: Framework, Certs, VirusTotal, Whois, Reporter, Guesser
+Stop when first finding: {'identity', 'personName', 'organization'}
+Datasets: Framework, Guesser, Reporter, Whois, Certs, VirusTotal
 Exploring from 1 seeds
-Expanding on generic seed IOC: fqdn	walmart.com
+Expanding on generic seed IOC: fqdn	amazon.com
 Max iterations: 50
-#000 Expanding: fqdn	walmart.com
+#000 Expanding: fqdn	amazon.com
   Queried Framework
-    Attr: esld	walmart.com
+    Attr: esld	amazon.com
   Queried Guesser
-    Attr: server	23.45.148.180:443/tcp
-    Attr: server	23.45.148.180:80/tcp
-  server	23.45.148.180:80/tcp
-    Attr: guessedUrl	http://walmart.com/
-    Attr: guessedUrl	http://www.walmart.com/
-  server	23.45.148.180:443/tcp
-    Attr: guessedUrl	https://walmart.com/
-    Attr: guessedUrl	https://www.walmart.com/
-    Attr: securityUrl	https://walmart.com/.well-known/security.txt
-    Attr: securityUrl	https://walmart.com/security.txt
+    Attr: server	54.239.28.85:443/tcp
+    Attr: server	54.239.28.85:80/tcp
+  server	54.239.28.85:80/tcp
+    Attr: guessedUrl	http://amazon.com/
+    Attr: guessedUrl	http://www.amazon.com/
+  server	54.239.28.85:443/tcp
+    Attr: guessedUrl	https://amazon.com/
+    Attr: guessedUrl	https://www.amazon.com/
+    Attr: securityUrl	https://amazon.com/.well-known/security.txt
+    Attr: securityUrl	https://amazon.com/security.txt
   Queried Certs
-    Attr: server	23.45.148.180:443/tcp
-  server	23.45.148.180:443/tcp
-    Attr: certDerSha1	BF337369061BCCED1F6E6000367CA2339B31469B
-  certDerSha1	BF337369061BCCED1F6E6000367CA2339B31469B
-    Attr: certSubjectDN	C=US | ST=Arkansas | L=Bentonville | O=Walmart Inc. | CN=www.walmart.com
-    Attr: fqdn	beta.walmart.com
-    Attr: fqdn	grocery.walmart.com
-    Attr: fqdn	walmart.com
-    Attr: fqdn	walmart.pharmacy
-    Attr: fqdn	walmartspecialty.pharmacy
-    Attr: fqdn	www.wal-mart.com
-  certSubjectDN	C=US | ST=Arkansas | L=Bentonville | O=Walmart Inc. | CN=www.walmart.com
-    Attr: fqdn	www.walmart.com
-    Attr: organization	Walmart Inc.
-Skipping generic IOC: fqdn	www.wal-mart.com
-Finishing after finding IOC of type {'identity', 'organization', 'personName'}
-Queries to dataset Framework: 1
-Queries to dataset Certs: 1
-Queries to dataset VirusTotal: 0
-Queries to dataset Whois: 0
-Queries to dataset Reporter: 0
+    Attr: server	54.239.28.85:443/tcp
+  server	54.239.28.85:443/tcp
+    Attr: certDerSha1	41A1C37C6234DB1EB9D0679EE1DD7322B85AE391
+  certDerSha1	41A1C37C6234DB1EB9D0679EE1DD7322B85AE391
+    Attr: certSubjectDN	CN=*.peg.a2z.com
+    Attr: fqdn	amazon.co.uk
+    Attr: fqdn	amazon.com
+    Attr: fqdn	amzn.com
+    Attr: fqdn	origin-www.amazon.co.uk
+    Attr: fqdn	uedata.amazon.co.uk
+    Attr: fqdn	uedata.amazon.com
+    Attr: fqdn	us.amazon.com
+    Attr: fqdn	www.amazon.co.uk
+    Attr: fqdn	www.amazon.com
+    Attr: fqdn	www.amzn.com
+  certSubjectDN	CN=*.peg.a2z.com
+    Attr: fqdn	peg.a2z.com
+Skipping generic IOC: fqdn	amazon.co.uk
+Skipping generic IOC: fqdn	amzn.com
+Skipping generic IOC: fqdn	origin-www.amazon.co.uk
+Skipping generic IOC: fqdn	uedata.amazon.co.uk
+Skipping generic IOC: fqdn	www.amazon.co.uk
+Skipping generic IOC: fqdn	www.amzn.com
+Skipping generic IOC: fqdn	peg.a2z.com
+#001 Expanding: server	54.239.28.85:443/tcp
+  Queried Framework
+    Attr: ip	54.239.28.85
+  Queried Certs
+    Attr: certDerSha1	41A1C37C6234DB1EB9D0679EE1DD7322B85AE391
+    Attr: server	54.239.28.85:443/tcp
+  certDerSha1	41A1C37C6234DB1EB9D0679EE1DD7322B85AE391
+    Attr: certSubjectDN	CN=*.peg.a2z.com
+    Attr: fqdn	amazon.co.uk
+    Attr: fqdn	amazon.com
+    Attr: fqdn	amzn.com
+    Attr: fqdn	origin-www.amazon.co.uk
+    Attr: fqdn	uedata.amazon.co.uk
+    Attr: fqdn	uedata.amazon.com
+    Attr: fqdn	us.amazon.com
+    Attr: fqdn	www.amazon.co.uk
+    Attr: fqdn	www.amazon.com
+    Attr: fqdn	www.amzn.com
+  certSubjectDN	CN=*.peg.a2z.com
+    Attr: fqdn	peg.a2z.com
+#002 Expanding: server	54.239.28.85:80/tcp
+  Queried Framework
+    Attr: ip	54.239.28.85
+    No valid certificate for 54.239.28.85:80 
+  Queried Certs
+#003 Expanding: guessedUrl	http://amazon.com/
+Ctr+C Pressed
+Request to end exploration. Stopping...
+Downloaded 857716 bytes from http://amazon.com/ into /app/attribution-master/framework/downloads_dir/d7fb7f1ab564538c8dd78ec934860957c832ccbd15f35714be2b24f0c01f1197.download
+  Queried Reporter
+    Attr: url	https://amazon.com/
+  url	https://amazon.com/
+    Attr: url	https://www.amazon.com/
+  url	https://www.amazon.com/
+    Attr: file	d7fb7f1ab564538c8dd78ec934860957c832ccbd15f35714be2b24f0c01f1197
+Queries to dataset Framework: 3
 Queries to dataset Guesser: 1
-Remaining IOCs in worklist: 15
-Runtime: 0.16 seconds
+Queries to dataset Reporter: 1
+Queries to dataset Whois: 0
+Queries to dataset Certs: 3
+Queries to dataset VirusTotal: 0
+Remaining IOCs in worklist: 13
+Runtime: 5.58 seconds

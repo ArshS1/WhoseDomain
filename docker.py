@@ -1,3 +1,5 @@
+# WhoseDomain - 2025
+
 import subprocess
 import os
 
