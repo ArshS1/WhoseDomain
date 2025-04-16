@@ -471,6 +471,27 @@ def main():
             for match in matches:
                 people_names.add(match.strip())
         
+        # === Filter detected names to reduce false positives ===
+        filtered_people_names = set()
+
+        for name in people_names:
+            # Skip all-uppercase or overly long "names"
+            if name.isupper() or len(name.split()) > 3:
+                continue
+            # Remove common non-name terms
+            if name.lower() in ["home", "projects", "about", "contact", "services", "blog", "request resume"]:
+                continue
+            # Exclude anything with numbers
+            if any(char.isdigit() for char in name):
+                continue
+            # Accept names like "Prabhjott" or "John Doe"
+            if re.match(r"^[A-Z][a-z]+(?:\s+[A-Z][a-z]+)*$", name):
+                filtered_people_names.add(name)
+
+        # Replace the original set with the filtered version
+        people_names = filtered_people_names
+
+
         # Write results to file
         with open(args.output, 'w', encoding='utf-8') as f:
             f.write(f"# People found\n\n")
