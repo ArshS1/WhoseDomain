@@ -12,6 +12,11 @@ import time
 import random
 import cloudscraper  # New library for bypassing anti-bot protections
 from fake_useragent import UserAgent  # For better User-Agent rotation
+import nltk
+from nltk.tag import StanfordNERTagger
+from nltk.tokenize import sent_tokenize, word_tokenize
+nltk.download('punkt_tab')
+st = StanfordNERTagger('stanford-ner/english.all.3class.distsim.crf.ser.gz', 'stanford-ner/stanford-ner.jar')
 
 # Set up logging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
@@ -196,53 +201,44 @@ def extract_text_from_html(html_content):
     
     return text
 
-def extract_people_names(text, nlp):
-    """Extract people's names from text using spaCy NER and custom patterns."""
+def extract_people_names_with_stanford(text):
+    """Extract people's names from text using Stanford NER."""
     if not text:
         return set()
     
-    # Run spaCy NER
-    doc = nlp(text)
     people = set()
     
-    # Get names identified by the NER model
+    # Tokenize the text into sentences
+    for sent in sent_tokenize(text):
+        # Tokenize each sentence into words
+        tokens = word_tokenize(sent)
+        # Tag tokens using Stanford NER
+        tags = st.tag(tokens)
+        # Extract names tagged as 'PERSON'
+        for tag in tags:
+            if tag[1] == 'PERSON':
+                people.add(tag[0])
+    
+    return people
+
+
+
+
+def extract_people_names(text, nlp):
+    """Extract people's names from text using spaCy NER and Stanford NER."""
+    if not text:
+        return set()
+    
+    # Use spaCy NER
+    doc = nlp(text)
+    people = set()
     for ent in doc.ents:
         if ent.label_ == "PERSON":
             people.add(ent.text)
     
-    # Add custom pattern recognition for names
-    # Look for patterns like "I'm [NAME]" or "Hi, I'm [NAME]"
-    name_patterns = [
-        r"I'm\s+([A-Z][a-z]+(?:\s+[A-Z][a-z]+)*)",
-        r"Hi,\s+I'm\s+([A-Z][a-z]+(?:\s+[A-Z][a-z]+)*)",
-        r"Hello,\s+I'm\s+([A-Z][a-z]+(?:\s+[A-Z][a-z]+)*)",
-        r"My\s+name\s+is\s+([A-Z][a-z]+(?:\s+[A-Z][a-z]+)*)",
-        r"Hi,\s*I'?m\s+([A-Z][a-z]+)"  # More relaxed pattern
-    ]
-    
-    for pattern in name_patterns:
-        matches = re.findall(pattern, text, re.IGNORECASE)
-        for match in matches:
-            people.add(match.strip())
-    
-    # Look for standalone names that are repeated multiple times
-    name_candidates = {}
-    words = re.findall(r'\b([A-Z][a-z]{2,})\b', text)
-    for word in words:
-        if word not in ["The", "This", "That", "These", "Those", "Their", "They", "When", "Where", "What", "Which"]:
-            name_candidates[word] = name_candidates.get(word, 0) + 1
-    
-    # Names likely appear multiple times
-    for name, count in name_candidates.items():
-        if count >= 2:
-            people.add(name)
-    
-    # Look for single name on a line by itself
-    lines = text.split('\n')
-    for line in lines:
-        line = line.strip()
-        if re.match(r'^[A-Z][a-z]+$', line) and len(line) > 2:
-            people.add(line)
+    # Use Stanford NER
+    stanford_people = extract_people_names_with_stanford(text)
+    people.update(stanford_people)
     
     return people
 
@@ -299,34 +295,42 @@ def detect_direct_names(text):
     
     return names
 
+def filter_valid_names(people_names):
+    """Filter valid names from the set of detected names."""
+    valid_names = set()
+    for name in people_names:
+        # Skip all-uppercase or overly long "names"
+        if name.isupper() or len(name.split()) > 3:
+            continue
+        # Remove common non-name terms
+        if name.lower() in ["home", "projects", "about", "contact", "services", "blog", "request resume", "secure password generator", "cybersecurity certification", "cybersecurity fellow", "hunter college", "new york city"]:
+            continue
+        # Exclude anything with numbers
+        if any(char.isdigit() for char in name):
+            continue
+        # Ensure name length is between 5 and 20 characters
+        if not (5 <= len(name) <= 20):
+            continue
+        # Accept names like "Prabhjott" or "John Doe"
+        if re.match(r"^[A-Z][a-z]+(?:\s+[A-Z][a-z]+)*$", name):
+            valid_names.add(name)
+    return valid_names
+
 def crawl_site(domain, max_pages=20):
-    """Crawl a website and collect text content and people names."""
+    """Crawl a website and collect text content, people names, internal links, and external links."""
     domain = normalize_url(domain)
     visited_urls = set()
     to_visit = {domain}
     all_text = ""
     people_names = set()
+    internal_links = set()
+    external_links = set()
     
     nlp = load_nlp_model()
     
     logger.info(f"Starting crawl of {domain}")
     
-    # Attempt crawling with increased robustness
-    retry_count = 0
-    use_cloudscraper = True  # Start with cloudscraper
-    
-    while to_visit and len(visited_urls) < max_pages and retry_count < 5:  # Increased retry count
-        if not to_visit:
-            retry_count += 1
-            logger.warning(f"No URLs to visit, retry {retry_count}/5")
-            if retry_count >= 5:
-                break
-            # Try the domain again as a last resort
-            to_visit = {domain}
-            # Toggle between scraping methods on retries
-            use_cloudscraper = not use_cloudscraper
-            continue
-            
+    while to_visit and len(visited_urls) < max_pages:
         current_url = to_visit.pop()
         
         if current_url in visited_urls:
@@ -335,8 +339,8 @@ def crawl_site(domain, max_pages=20):
         logger.info(f"Processing {current_url}")
         visited_urls.add(current_url)
         
-        # Try to get the content with the appropriate method
-        html_content = fetch_page_content(current_url, retry_count=5, use_cloudscraper=use_cloudscraper)
+        # Fetch the page content
+        html_content = fetch_page_content(current_url)
         if not html_content:
             logger.warning(f"Failed to fetch content from {current_url}")
             continue
@@ -355,167 +359,56 @@ def crawl_site(domain, max_pages=20):
             # Also try direct name detection
             direct_names = detect_direct_names(text)
             people_names.update(direct_names)
-            
-            # Extract more internal links to visit
-            internal_links = set()
-            base_domain = extract_domain(domain)
-            
-            for a_tag in soup.find_all('a', href=True):
-                href = a_tag['href']
-                full_url = urljoin(current_url, href)
-                
-                if extract_domain(full_url) == base_domain:
-                    internal_links.add(full_url)
-            
-            logger.info(f"Found {len(internal_links)} internal links")
-            to_visit.update(link for link in internal_links if link not in visited_urls)
-        else:
-            logger.warning(f"No text content found in {current_url}")
-    
-    if not people_names and all_text:
-        # If no names found but we have text, try again with custom patterns
-        people_names = extract_people_names(all_text, nlp)
-        direct_names = detect_direct_names(all_text)
-        people_names.update(direct_names)
+        
+        # Extract links
+        base_domain = extract_domain(domain)
+        for a_tag in soup.find_all('a', href=True):
+            href = a_tag['href']
+            full_url = urljoin(current_url, href)
+            if extract_domain(full_url) == base_domain:
+                internal_links.add(full_url)
+                to_visit.add(full_url)
+            else:
+                external_links.add(full_url)
     
     logger.info(f"Crawled {len(visited_urls)} pages")
     logger.info(f"Found {len(people_names)} unique person names")
+    logger.info(f"Found {len(internal_links)} internal links")
+    logger.info(f"Found {len(external_links)} external links")
     
-    return people_names, all_text, visited_urls
+    return people_names, all_text, visited_urls, internal_links, external_links
 
 def main():
     """Main function to parse arguments and run the crawler."""
     parser = argparse.ArgumentParser(description='Extract people names from a website or text content')
     parser.add_argument('input', help='The domain to crawl (e.g., example.com) or file containing website content')
     parser.add_argument('--max-pages', type=int, default=20, help='Maximum number of pages to crawl')
-    parser.add_argument('--output', help='Output file for the results', default='names.txt')
-    parser.add_argument('--file', action='store_true', help='Treat input as a file path containing website content')
-    parser.add_argument('--text', action='store_true', help='Treat input as direct text content')
-    parser.add_argument('--static', action='store_true', help='Process input as static website content pasted directly')
-    parser.add_argument('--use-selenium', action='store_true', help='Use Selenium WebDriver for rendering JavaScript')
-    parser.add_argument('--use-cloudscraper', action='store_true', help='Use cloudscraper to bypass protections')
-    
     args = parser.parse_args()
     
     try:
-        if args.file:
-            # Process file containing website content
-            logger.info(f"Processing file: {args.input}")
-            content = process_file_content(args.input)
-            if not content:
-                logger.error("Could not read file content")
-                return
-            
-            people_names, all_text = extract_names_from_static_content(content)
-            # Also try direct name detection
-            direct_names = detect_direct_names(content)
-            people_names.update(direct_names)
-            visited_urls = []
-        elif args.text or args.static:
-            # Direct text input (e.g., piped from stdin)
-            if args.input == '-':
-                content = sys.stdin.read()
-            else:
-                content = args.input
-            
-            logger.info("Processing direct text input")
-            people_names, all_text = extract_names_from_static_content(content)
-            # Also try direct name detection
-            direct_names = detect_direct_names(content)
-            people_names.update(direct_names)
-            visited_urls = []
-        else:
-            # Crawl a website
-            logger.info(f"Starting crawl of {args.input}")
-            people_names, all_text, visited_urls = crawl_site(args.input, args.max_pages)
+        # Crawl a website
+        logger.info(f"Starting crawl of {args.input}")
+        people_names, all_text, visited_urls, internal_links, external_links = crawl_site(args.input, args.max_pages)
         
-        # If no names found but we have text, try with more aggressive patterns
-        if not people_names and all_text:
-            # Look for names in specific contexts
-            lines = all_text.split('\n')
-            for i, line in enumerate(lines):
-                if "Hi, I'm" in line or "Hello, I'm" in line:
-                    # Extract name after greeting
-                    match = re.search(r"(?:Hi,|Hello,)\s+I'?m\s+([A-Za-z]+)", line)
-                    if match:
-                        people_names.add(match.group(1))
-                
-                # Look for standalone names
-                if len(line.strip().split()) == 1 and line.strip() and line.strip()[0].isupper():
-                    # Check if this might be a name
-                    if len(line.strip()) > 2 and line.strip().isalpha():
-                        people_names.add(line.strip())
-        
-        # Manual check for specific patterns in the content
-        # Extract lines that might contain a name by themselves
-        lines = all_text.split('\n')
-        for line in lines:
-            line = line.strip()
-            # Check for lines that are 1-3 words and all start with uppercase
-            if len(line.split()) <= 3 and len(line.split()) > 0:
-                if all(word[0].isupper() for word in line.split() if word and len(word) > 0 and word[0].isalpha()):
-                    # Make sure it's not a menu item
-                    if not any(keyword in line.lower() for keyword in ["home", "about", "contact", "projects", "blog", "services"]):
-                        people_names.add(line)
-        
-        # Check for text patterns that often introduce names
-        greeting_patterns = [
-            r"Hi,\s+I'?m\s+([A-Za-z]+)",
-            r"Hello,\s+I'?m\s+([A-Za-z]+)",
-            r"I\s+am\s+([A-Za-z]+\s+[A-Za-z]+)",
-            r"My\s+name\s+is\s+([A-Za-z]+\s+[A-Za-z]+)"
-        ]
-        
-        for pattern in greeting_patterns:
-            matches = re.findall(pattern, all_text, re.IGNORECASE)
-            for match in matches:
-                people_names.add(match.strip())
-        
-        # === Filter detected names to reduce false positives ===
-        filtered_people_names = set()
-
-        for name in people_names:
-            # Skip all-uppercase or overly long "names"
-            if name.isupper() or len(name.split()) > 3:
-                continue
-            # Remove common non-name terms
-            if name.lower() in ["home", "projects", "about", "contact", "services", "blog", "request resume"]:
-                continue
-            # Exclude anything with numbers
-            if any(char.isdigit() for char in name):
-                continue
-            # Accept names like "Prabhjott" or "John Doe"
-            if re.match(r"^[A-Z][a-z]+(?:\s+[A-Z][a-z]+)*$", name):
-                filtered_people_names.add(name)
-
-        # Replace the original set with the filtered version
-        people_names = filtered_people_names
-
-
-        # Write results to file
-        with open(args.output, 'w', encoding='utf-8') as f:
-            f.write(f"# People found\n\n")
-            if people_names:
-                for name in sorted(people_names):
-                    f.write(f"- {name}\n")
-            else:
-                f.write("No names found\n")
-            
-            if visited_urls:
-                f.write(f"\n\n# Pages crawled ({len(visited_urls)}):\n")
-                for url in sorted(visited_urls):
-                    f.write(f"- {url}\n")
-        
-        logger.info(f"Results written to {args.output}")
+        # Filter valid names
+        valid_names = filter_valid_names(people_names)
         
         # Print results to console
-        if people_names:
-            print(f"\nFound {len(people_names)} people:")
-            for name in sorted(people_names):
-                print(f"- {name}")
-        else:
-            print("\nNo names found in the content")
+        print("\nPotential Owners Found:")
+        for name in sorted(valid_names):
+            print(f"- {name}")
         
+        print("\nInternal Links Found:")
+        for url in sorted(internal_links):
+            print(f"- {url}")
+        
+        print("\nExternal Links Found:")
+        for url in sorted(external_links):
+            print(f"- {url}")
+        
+        print("\nPages Visited:")
+        print(f"- {len(visited_urls)} pages visited")
+    
     except Exception as e:
         logger.error(f"An error occurred: {e}")
         import traceback
