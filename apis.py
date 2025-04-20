@@ -1,13 +1,10 @@
 # WhoseDomain - 2025
 
 import shodan
-from domaintools import API as DomainToolsAPI
 from virustotal_python import Virustotal
 import json
 
 SHODAN_API_KEY = 'y3O9GyWQEs1GB0HoETMGlAQruiQ6hUSK'
-DOMAINTOOLS_USER_ID = 'YOUR_DOMAINS_USER_ID'
-DOMAINTOOLS_API_KEY = 'YOUR_DOMAINS_API_KEY'
 VIRUSTOTAL_API_KEY = '7beb1f8d0ede6db89485bee41b2789ce2e1c82eabad82bace7d6f863428fc4c4'
 
 def query_shodan(domain_or_ip):
@@ -18,16 +15,6 @@ def query_shodan(domain_or_ip):
         print(json.dumps(result, indent=2))
     except Exception as e:
         print(f"[-] Shodan Error: {e}")
-
-def query_domaintools(domain):
-    print("\n[+] DomainTools WHOIS Info")
-    try:
-        api = DomainToolsAPI(DOMAINTOOLS_USER_ID, DOMAINTOOLS_API_KEY)
-        whois = api.whois(domain)
-        parsed = whois.data.get('response', {})
-        print(json.dumps(parsed, indent=2))
-    except Exception as e:
-        print(f"[-] DomainTools Error: {e}")
 
 def query_virustotal(domain_or_ip):
     print("\n[+] VirusTotal Info")
@@ -55,5 +42,4 @@ if __name__ == "__main__":
         ip = target
 
     query_shodan(ip if ip else target)
-    query_domaintools(target)
     query_virustotal(target)
