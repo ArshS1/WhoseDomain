@@ -1,22 +1,33 @@
 # WhoseDomain - 2025
 
-import subprocess
-import threading
-import os
-from queue import Queue
+# This script is designed to batch process a list of domains, running the scraper and certificate check for each.
 
-def process_domain(domain, output_queue):
-    """Run whoseDomain.py for a single domain and capture the output."""
+import subprocess
+import os
+
+def process_domain(domain):
+    """Run whoseDomain.py for a single domain and provide the domain as input."""
     try:
-        result = subprocess.run(
-            ["python3", "whoseDomain.py", domain],
-            capture_output=True,
-            text=True,
-            check=True
+        # Start the whoseDomain.py process
+        process = subprocess.Popen(
+            ["python3", "whoseDomain.py"],
+            stdin=subprocess.PIPE,
+            stdout=subprocess.PIPE,
+            stderr=subprocess.PIPE,
+            text=True
         )
-        output_queue.put((domain, result.stdout))
-    except subprocess.CalledProcessError as e:
-        output_queue.put((domain, f"Error: {e.stderr}"))
+        
+        # Provide the domain as input to the script
+        stdout, stderr = process.communicate(input=domain)
+        
+        # Print the output and errors
+        print(f"\n--- Output for {domain} ---")
+        print(stdout)
+        if stderr:
+            print(f"\n--- Error for {domain} ---")
+            print(stderr)
+    except Exception as e:
+        print(f"An error occurred while processing {domain}: {e}")
 
 def main():
     # Read domains from domains.txt
@@ -28,25 +39,9 @@ def main():
     with open(domains_file, "r") as file:
         domains = [line.strip() for line in file if line.strip()]
 
-    # Queue to store results
-    output_queue = Queue()
-
-    # Create threads for concurrent processing
-    threads = []
+    # Process each domain
     for domain in domains:
-        thread = threading.Thread(target=process_domain, args=(domain, output_queue))
-        threads.append(thread)
-        thread.start()
-
-    # Wait for all threads to complete
-    for thread in threads:
-        thread.join()
-
-    # Collect and display results
-    while not output_queue.empty():
-        domain, output = output_queue.get()
-        print(f"\n--- Output for {domain} ---")
-        print(output)
+        process_domain(domain)
 
 if __name__ == "__main__":
     main()
