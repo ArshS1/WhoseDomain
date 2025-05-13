@@ -1,5 +1,7 @@
 # WhoseDomain - 2025
 
+# This script is designed to crawl a website, extract text content, and identify potential owners by analyzing the text for names. It also collects internal and external links found on the pages.
+
 import requests
 from bs4 import BeautifulSoup
 import re

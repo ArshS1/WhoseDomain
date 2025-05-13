@@ -1,10 +1,11 @@
 # WhoseDomain - 2025
 
+# This script brings together the functionality of the scraper, TLS certificate check, and API checks.
+
 import sys
 import subprocess
 from scraper import crawl_site
 from certificate import get_tls_certificate, extract_certificate_details
-# from apis import some_api_function  # Extend if apis.py is implemented later
 
 def run_scraper(domain):
     """Run the scraper for a given domain."""

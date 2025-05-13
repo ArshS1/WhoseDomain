@@ -1,0 +1,674 @@
+Batching Output
+==================================================
+
+--- Output for michaelkolesidis.com ---
+Enter the domain: 
+Potential Owners Found:
+- Kolesidis
+- Michael
+- Michael Kolesidis
+
+Internal Links Found:
+
+External Links Found:
+
+Pages Visited:
+- 1 pages visited
+
+--- Checking TLS Certificate ---
+Common Name (CN): michaelkolesidis.com
+Organization (O): None
+Organizational Unit (OU): None
+Country (C): None
+State (ST): None
+Locality (L): None
+
+--- Running API Checks ---
+
+--- Output from API Checks for michaelkolesidis.com ---
+Enter domain or IP: 
+[+] Shodan Info
+{
+  "region_code": "CA",
+  "tags": [],
+  "ip": 1280054549,
+  "area_code": null,
+  "domains": [
+    "beauchampwebdesign.co.uk"
+  ],
+  "hostnames": [
+    "beauchampwebdesign.co.uk"
+  ],
+  "country_code": "US",
+  "org": "Vercel, Inc",
+  "data": [
+    {
+      "hash": 1557070764,
+      "asn": "AS16509",
+      "http": {
+        "status": 308,
+        "robots_hash": null,
+        "redirects": [],
+        "title_hash": null,
+        "securitytxt": null,
+        "title": null,
+        "sitemap_hash": null,
+        "robots": null,
+        "dom_hash": -2006505642,
+        "headers_hash": 235805251,
+        "host": "nya.lt",
+        "html": "Redirecting...",
+        "server_hash": -590611983,
+        "location": "/",
+        "components": {
+          "Vercel": {
+            "categories": [
+              "PaaS"
+            ]
+          }
+        },
+        "securitytxt_hash": null,
+        "server": "Vercel",
+        "sitemap": null,
+        "html_hash": 1378095735
+      },
+      "os": null,
+      "timestamp": "2025-05-10T16:07:51.233992",
+      "isp": "Amazon.com, Inc.",
+      "transport": "tcp",
+      "_shodan": {
+        "region": "eu",
+        "module": "http",
+        "ptr": true,
+        "options": {
+          "hostname": "nya.lt"
+        },
+        "id": "1b249c57-3b8b-4b9c-b1b5-302f2be5ab69",
+        "crawler": "d0cd42d83a83f4bbf3a4d33a923fd37cb4a28ce3"
+      },
+      "hostnames": [],
+      "location": {
+        "city": "Walnut",
+        "region_code": "CA",
+        "area_code": null,
+        "longitude": -117.8546,
+        "latitude": 34.0183,
+        "country_code": "US",
+        "country_name": "United States"
+      },
+      "ip": 1280054549,
+      "domains": [],
+      "org": "Vercel, Inc",
+      "data": "HTTP/1.0 308 Permanent Redirect\r\nContent-Type: text/plain\r\nLocation: https://nya.lt/\r\nRefresh: 0;url=https://nya.lt/\r\nserver: Vercel\r\n\r\n",
+      "port": 80,
+      "opts": {},
+      "ip_str": "76.76.21.21"
+    },
+    {
+      "hash": 1964229112,
+      "asn": "AS16509",
+      "http": {
+        "status": 200,
+        "robots_hash": -624745641,
+        "redirects": [],
+        "title_hash": 1654783729,
+        "securitytxt": null,
+        "title": "Ridiculously cheap web design services for small business",
+        "sitemap_hash": null,
+        "robots": "User-agent: *\nAllow: /\nSitemap: https://beauchampwebdesign.co.uk/sitemap-index.xml\nSitemap: https://beauchampwebdesign.co.uk/sitemap-0.xml\n",
+        "dom_hash": -2017020534,
+        "headers_hash": -1833796243,
+        "host": "beauchampwebdesign.co.uk",
+        "html": "<!DOCTYPE html><html lang=\"en\"> <head><!-- Global Metadata --><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"><link rel=\"icon\" type=\"image/svg+xml\" href=\"/favicon.svg\"><meta name=\"generator\" content=\"Astro v4.16.18\"><script src=\"/js/script.js\" defer></script><!-- Font preloads --><link rel=\"preload\" href=\"/fonts/Poppins-Regular.woff2\" as=\"font\" type=\"font/woff2\" crossorigin><link rel=\"preload\" href=\"/fonts/Poppins-Bold.woff2\" as=\"font\" type=\"font/woff2\" crossorigin><title>Ridiculously cheap web design services for small business</title><link rel=\"canonical\" href=\"https://beauchampwebdesign.co.uk/\"><meta name=\"description\" content=\"Want a professional website at an unbeatable price? Choose our ridiculously cheap web design services from $249 and get a nice website\"><meta name=\"robots\" content=\"index, follow\"><link rel=\"stylesheet\" href=\"/_astro/_slug_.DAhQsGn_.css\">\n<style>:root{--clr-accent: #0d9488;--clr-light-gray: #e5e7eb;--clr-dark-gray: #374151}@font-face{font-family:Poppins;src:url(/fonts/Poppins-Regular.woff2) format(\"woff2\");font-weight:400}@font-face{font-family:Poppins;src:url(/fonts/Poppins-SemiBold.woff2) format(\"woff2\");font-weight:600}@font-face{font-family:Poppins;src:url(/fonts/Poppins-Bold.woff2) format(\"woff2\");font-weight:700}@font-face{font-family:Poppins;src:url(/fonts/Poppins-Light.woff2) format(\"woff2\");font-weight:300}html{scroll-behavior:smooth}body{font-family:Poppins,sans-serif}.post-content p{margin-bottom:.625rem}.post-content>p{color:var(--clr-dark-gray)}.post-content a{color:var(--clr-accent)}.post-content a:hover{text-decoration:underline}.post-content h1,.post-content h2,.post-content h3,.post-content h4,.post-content h5{margin-top:.25rem;margin-bottom:.5rem}.post-content h1{font-size:2.25rem}.post-content h2{font-size:1.75rem}.post-content h3{font-size:1.5rem}.post-content .content-block-title,.post-content h5{font-size:1.25rem}@media only screen and (max-width: 600px){.post-content h2{font-size:1.5rem}.post-content h3{font-size:1.25rem}}.post-content ul li{list-style-type:disc;margin-left:1rem;color:var(--clr-dark-gray)}.post-content ul.post-sidebar li{list-style-type:none}.post-content pre{padding:.5rem .75rem}.post-content code{background-color:var(--clr-light-gray)}.post-content pre code{background-color:transparent}.post-content table{width:100%}.post-content table td{padding:.25rem;border:1px solid #eee}.post-content table th{background-color:#eee;padding:.5rem .25rem}.menu-item[data-astro-cid-3ef6ksr2]{display:block;border-bottom-width:1px;--tw-border-opacity: 1;border-color:rgb(243 244 246 / var(--tw-border-opacity));padding:.5rem 1rem .5rem .75rem;--tw-text-opacity: 1;color:rgb(55 65 81 / var(--tw-text-opacity))}.menu-item[data-astro-cid-3ef6ksr2]:hover{--tw-bg-opacity: 1;background-color:rgb(249 250 251 / var(--tw-bg-opacity))}@media (min-width: 768px){.menu-item[data-astro-cid-3ef6ksr2]{border-width:0px;padding:0}.menu-item[data-astro-cid-3ef6ksr2]:hover{background-color:transparent;--tw-text-opacity: 1;color:rgb(15 118 110 / var(--tw-text-opacity))}}@media (prefers-color-scheme: dark){.menu-item[data-astro-cid-3ef6ksr2]{--tw-border-opacity: 1;border-color:rgb(55 65 81 / var(--tw-border-opacity));--tw-text-opacity: 1;color:rgb(156 163 175 / var(--tw-text-opacity))}.menu-item[data-astro-cid-3ef6ksr2]:hover{--tw-bg-opacity: 1;background-color:rgb(55 65 81 / var(--tw-bg-opacity));--tw-text-opacity: 1;color:rgb(255 255 255 / var(--tw-text-opacity))}}@media (min-width: 768px){@media (prefers-color-scheme: dark){.menu-item[data-astro-cid-3ef6ksr2]:hover{background-color:transparent;--tw-text-opacity: 1;color:rgb(255 255 255 / var(--tw-text-opacity))}}}.menu-item[data-astro-cid-3ef6ksr2].active{border-radius:.25rem;--tw-bg-opacity: 1;background-color:rgb(15 118 110 / var(--tw-bg-opacity));--tw-text-opacity: 1;color:rgb(255 255 255 / var(--tw-text-opacity))}@media (min-width: 768px){.menu-item[data-astro-cid-3ef6ksr2].active{background-color:transparent;--tw-text-opacity: 1;color:rgb(15 118 110 / var(--tw-text-opacity))}}\n</style><script type=\"module\" src=\"/_astro/hoisted.CTG-8YfL.js\"></script></head> <body> <!-- <div class=\"mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8\"> --><!-- component --><header class=\"bg-slate-100 py-2\" data-astro-cid-3ef6ksr2> <nav class=\"\" data-astro-cid-3ef6ksr2> <div class=\"container flex flex-wrap justify-between items-center mx-auto px-3\" data-astro-cid-3ef6ksr2> <a href=\"/\" class=\"flex\" aria-label=\"Logo\" data-astro-cid-3ef6ksr2> <svg class=\"h-10 mr-3\" xmlns=\"http://www.w3.org/2000/svg\" width=\"32\" height=\"32\" viewBox=\"0 0 48 48\" data-astro-cid-3ef6ksr2> <g fill=\"none\" stroke=\"#0d9488\" stroke-width=\"4\" data-astro-cid-3ef6ksr2> <path fill=\"#0d9488\" stroke-linejoin=\"round\" d=\"M20 6H6v14h14zm0 22H6v14h14zM42 6H28v14h14z\" data-astro-cid-3ef6ksr2></path> <path stroke-linecap=\"round\" d=\"M29 28v14m12-14v14\" data-astro-cid-3ef6ksr2></path> </g> </svg> </a> <div class=\"flex items-center\" data-astro-cid-3ef6ksr2> <button id=\"menu-toggle\" type=\"button\" class=\"inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600 md:hidden\" data-astro-cid-3ef6ksr2> <span class=\"sr-only\" data-astro-cid-3ef6ksr2>Open main menu</span> <!-- Hamburger icon --> <svg class=\"h-6 w-6\" fill=\"none\" viewBox=\"0 0 24 24\" stroke=\"currentColor\" data-astro-cid-3ef6ksr2> <path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M4 6h16M4 12h16m-7 6h7\" data-astro-cid-3ef6ksr2></path> </svg> </button> </div> <div class=\"w-full md:block md:w-auto hidden\" id=\"mobile-menu\" data-astro-cid-3ef6ksr2> <ul class=\"flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium\" data-astro-cid-3ef6ksr2> <li data-astro-cid-3ef6ksr2> <a href=\"/\" class=\"menu-item active\" aria-current=\"page\" data-astro-cid-3ef6ksr2> Home </a> </li> <li data-astro-cid-3ef6ksr2> <a href=\"/website-packages\" class=\"menu-item\" data-astro-cid-3ef6ksr2> Packages </a> </li> <li data-astro-cid-3ef6ksr2> <a href=\"/blog\" class=\"menu-item\" data-astro-cid-3ef6ksr2> Blog </a> </li> <li data-astro-cid-3ef6ksr2> <a href=\"/contact\" class=\"menu-item\" data-astro-cid-3ef6ksr2> Contact </a> </li> </ul> </div> </div> </nav>   </header> <main> <div class=\"bg-white relative flex items-center n justify-center overflow-hidden z-50\"> <div class=\"relative mx-auto h-full px-4 pb-20 md:pb-10 sm:max-w-xl md:max-w-full md:px-24 lg:max-w-screen-xl lg:px-8\"> <div class=\"flex flex-col items-center justify-between lg:flex-row py-16\"> <div class=\"relative\"> <div class=\"mb-4 opacity-50\"> <img src=\"/home-price.jpg\" class=\"w-36 z-0 h-full object-fill fill-y text-y\" alt=\"Website price\"> </div> <div class=\"lg:max-w-xl lg:pr-2 relative z-40\"> <p class=\"flex text-sm uppercase text-g1\">\nProfessional Websites, Budget-Friendly Prices.\n</p> <h1 class=\"mb-6 mt-3 max-w-lg text-2xl font-light leading-snug tracking-tight text-g1 md:text-5xl sm:leading-snug\">\nRidiculously Cheap\n<span class=\"my-0 inline-block border-b-8 border-g4 bg-white px-0 font-bold animate__animated animate__flash\">Web Design Services</span> </h1> <p class=\"text-base text-gray-700\">\nLaunch your website without emptying your wallet. We make\n            high-quality web design accessible for everyone, regardless of\n            budget.\n</p> <div class=\"mt-10 flex flex-col items-center md:flex-row\"> <a href=\"/contact\" class=\"mb-3 inline-flex h-12 w-full items-center justify-center rounded bg-teal-600 px-6 font-medium tracking-wide text-white shadow-md transition hover:bg-teal-800 focus:outline-none md:mr-4 md:mb-0 md:w-auto\">\nContact Us</a> <a href=\"/website-packages\" aria-label=\"\" class=\"group inline-flex items-center font-semibold text-g1\">Pricing\n<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"ml-2 h-6 w-6 transition-transform group-hover:translate-x-2\" fill=\"none\" viewBox=\"0 0 24 24\" stroke=\"currentColor\" stroke-width=\"2\"> <path stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"M17 8l4 4m0 0l-4 4m4-4H3\"></path> </svg> </a> </div> </div> </div> <div class=\"relative hidden lg:ml-16 lg:block lg:w-1/2\"> <svg xmlns=\"http://www.w3.org/2000/svg\" class=\"my-6 mx-auto h-10 w-10 animate-bounce rounded-full bg-white p-2 lg:hidden\" fill=\"none\" viewBox=\"0 0 24 24\" stroke=\"currentColor\" stroke-width=\"2\"> <path stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"M16 17l-4 4m0 0l-4-4m4 4V3\"></path> </svg> <div class=\"abg-orange-400 mx-auto w-fit overflow-hidden rounded-[6rem] rounded-br-none rounded-tl-none shadow-xl\"> <img alt=\"Website Design Example\" class=\"\" src=\"/websdesign-homepage.jpg\" height=\"400\"> </div> </div> </div> </div> <div class=\"hidden text-9xl varien absolute top-6 left-1/4 text-g/10 z-40\">\nAbout Us\n</div> <div class=\"absolute -bottom-24 left-10 z-0 opacity-10\"> <svg width=\"800px\" height=\"800px\" viewBox=\"0 0 24 24\" class=\"w-96 z-0 h-full object-fill fill-gray-300 text-gray-300\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"> <path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M12 6C12 5.44772 11.5523 5 11 5C10.4477 5 10 5.44772 10 6V16C10 16.5523 10.4477 17 11 17C11.5523 17 12 16.5523 12 16V6ZM9 9C9 8.44772 8.55228 8 8 8C7.44772 8 7 8.44772 7 9V16C7 16.5523 7.44772 17 8 17C8.55228 17 9 16.5523 9 16V9ZM15 9C15 8.44772 14.5523 8 14 8C13.4477 8 13 8.44772 13 9V16C13 16.5523 13.4477 17 14 17C14.5523 17 15 16.5523 15 16V9ZM18 13C18 12.4477 17.5523 12 17 12C16.4477 12 16 12.4477 16 13V16C16 16.5523 16.4477 17 17 17C17.5523 17 18 16.5523 18 16V13ZM6 15C6 14.4477 5.55228 14 5 14C4.44772 14 4 14.4477 4 15V16C4 16.5523 4.44772 17 5 17C5.55228 17 6 16.5523 6 16V15ZM21 15C21 14.4477 20.5523 14 20 14C19.4477 14 19 14.4477 19 15V16C19 16.5523 19.4477 17 20 17C20.5523 17 21 16.5523 21 16V15ZM4 18C3.44772 18 3 18.4477 3 19C3 19.5523 3.44772 20 4 20H21C21.5523 20 22 19.5523 22 19C22 18.4477 21.5523 18 21 18H4Z\"></path> </svg> </div> <div class=\"absolute -bottom-0 left-3/4 z-0 opacity-10\"> <svg width=\"800px\" height=\"800px\" viewBox=\"0 0 256 256\" xmlns=\"http://www.w3.org/2000/svg\" class=\"w-48 z-0 h-full -rotate-90 object-fill fill-red-300 text-red-300\"> <path d=\"M32 225h12.993A4.004 4.004 0 0 0 49 220.997V138.01c0-4.976.724-5.04 1.614-.16l12.167 66.708c.397 2.177 2.516 3.942 4.713 3.942h8.512a3.937 3.937 0 0 0 3.947-4S79 127.5 80 129s14.488 52.67 14.488 52.67c.559 2.115 2.8 3.83 5.008 3.83h8.008a3.993 3.993 0 0 0 3.996-3.995v-43.506c0-4.97 1.82-5.412 4.079-.965l10.608 20.895c1.001 1.972 3.604 3.571 5.806 3.571h9.514a3.999 3.999 0 0 0 3.993-4.001v-19.49c0-4.975 2.751-6.074 6.155-2.443l6.111 6.518c1.51 1.61 4.528 2.916 6.734 2.916h7c2.21 0 5.567-.855 7.52-1.92l9.46-5.16c1.944-1.06 5.309-1.92 7.524-1.92h23.992a4.002 4.002 0 0 0 4.004-3.992v-7.516a3.996 3.996 0 0 0-4.004-3.992h-23.992c-2.211 0-5.601.823-7.564 1.834l-4.932 2.54c-4.423 2.279-12.028 3.858-16.993 3.527l2.97.198c-4.962-.33-10.942-4.12-13.356-8.467l-11.19-20.14c-1.07-1.929-3.733-3.492-5.939-3.492h-7c-2.21 0-4 1.794-4 4.001v19.49c0 4.975-1.14 5.138-2.542.382l-12.827-43.535c-.625-2.12-2.92-3.838-5.127-3.838h-8.008c-2.207 0-3.916 1.784-3.817 4.005l1.92 42.998c.221 4.969-.489 5.068-1.585.224l-15.13-66.825c-.488-2.155-2.681-3.902-4.878-3.902h-8.512a3.937 3.937 0 0 0-3.947 4s.953 77-.047 75.5-13.937-92.072-13.937-92.072C49.252 34.758 47.21 33 45 33H31.999\" fill-rule=\"evenodd\"></path> </svg> </div> <div class=\"absolute top-10 left-3/4 z-0 opacity-10\"> <svg fill=\"#000000\" width=\"800px\" height=\"800px\" viewBox=\"0 0 256 256\" xmlns=\"http://www.w3.org/2000/svg\" class=\"w-96 z-0 h-full object-fill fill-blue-300 text-blue-300\"> <path d=\"M230.704 99.2a4.004 4.004 0 0 0-4.01-3.995h-50.981c-2.215 0-5.212-1.327-6.693-2.964L155.289 77.08c-17.795-19.65-41.628-16.256-53.234 7.58l-38.736 79.557C60.42 170.172 52.705 175 46.077 175H29.359a3.996 3.996 0 0 0-3.994 3.995v10.01A4 4 0 0 0 29.372 193h24.7c8.835 0 19.208-6.395 23.174-14.293l43.645-86.914c3.964-7.894 12.233-9.228 18.473-2.974l17.184 17.219c3.123 3.13 9.242 5.667 13.647 5.667H226.7a4.005 4.005 0 0 0 4.004-3.994v-8.512z\" fill-rule=\"evenodd\"></path> </svg> </div> </div> <!-- component --><section class=\"bg-slate-100\" id=\"whyus\"> <div class=\"py-10 sm:py-16 block lg:py-24 relative bg-opacity-50 z-40\"> <div class=\"relative mx-auto px-2 pb-10 md:pb-10 sm:max-w-xl md:max-w-full md:px-24 lg:max-w-screen-xl lg:px-8\"> <div class=\"px-2 mx-auto max-w-7xl sm:px-6 lg:px-8\"> <div class=\"max-w-xl mx-auto text-center\"> <div class=\"inline-flex px-4 py-1.5 mx-auto rounded-full\"> <h2 class=\"text-2xl md:text-4xl font-bold tracking-widest text-g uppercase\">\nWhy Work With Us?\n</h2> </div> <p class=\"mt-4 text-base leading-relaxed text-gray-600\">\nThe Perfect Blend of Quality & Affordability\n</p> <p class=\"mt-4 text-base text-gray-800\">\nWe're passionate about empowering businesses with stunning,\n            effective websites that don't cost a fortune. Here's why you'll love\n            working with us:\n</p> </div> <div class=\"grid grid-cols-1 gap-2 mt-12 lg:grid-cols-3 lg:mt-20\"> <!-- service card --> <div class=\"transition-all duration-1000 bg-white hover:bg-teal-600 hover:shadow-xl m-2 p-4 relative z-40 group\"> <div class=\"absolute bg-teal-500 top-0 left-0 w-24 h-1 z-30 transition-all duration-200 group-hover:bg-white group-hover:w-1/2\"></div> <div class=\"py-2 px-2 md:px-9\"> <svg class=\"w-16 h-16 fill-teal-500 group-hover:fill-white\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 32 32\" id=\"polo-tshirt\"> <path d=\"m16.962 5.841 3.582.717-.716-4.115zM12.172 2.443l-.716 4.115 3.582-.717z\"></path> <path d=\"M28.488 7.301a5.354 5.354 0 0 0-2.743-3.305c-.112-.056-2.96-1.2-4.942-1.996l.87 4.987a.52.52 0 0 1-.488.746.535.535 0 0 1-.101-.01L16.5 6.806V12a.5.5 0 1 1-1 0V6.806l-4.583.917a.518.518 0 0 1-.613-.598L11.196 2c-1.982.796-4.828 1.94-4.94 1.996a5.36 5.36 0 0 0-2.75 3.328l-1.492 6.26c-.042.175.01.359.138.486l.608.608a5.487 5.487 0 0 0 3.907 1.618c.196 0 .375-.111.464-.287l1.072-2.145c.013.292.02.584.02.876V28.48c0 .231.153.435.375.499A27.03 27.03 0 0 0 16 30c2.508 0 5.015-.34 7.402-1.022a.52.52 0 0 0 .376-.5V14.74c0-.292.006-.584.019-.876l1.073 2.145a.519.519 0 0 0 .463.287 5.487 5.487 0 0 0 3.907-1.618l.608-.608a.518.518 0 0 0 .138-.487l-1.498-6.282zM17.03 11.5c-.276 0-.505-.224-.505-.5s.219-.5.495-.5h.01a.5.5 0 0 1 0 1zm0-2c-.276 0-.505-.224-.505-.5s.219-.5.495-.5h.01a.5.5 0 0 1 0 1z\"></path> </svg> <h3 class=\"mt-8 text-lg font-semibold text-black group-hover:text-white\">\nClear & Upfront Pricing\n</h3> <p class=\"my-4 text-base text-gray-600 group-hover:text-white\">\nNo surprises, just honest and transparent pricing from the\n                start.\n</p> <a href=\"/website-packages\" class=\"flex font-light items-center gap-3 text-teal-700 group-hover:text-teal-100\">Learn more\n<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\" fill=\"currentColor\" viewBox=\"0 0 256 256\"><path d=\"M141.66,133.66l-80,80a8,8,0,0,1-11.32-11.32L124.69,128,50.34,53.66A8,8,0,0,1,61.66,42.34l80,80A8,8,0,0,1,141.66,133.66Zm80-11.32-80-80a8,8,0,0,0-11.32,11.32L204.69,128l-74.35,74.34a8,8,0,0,0,11.32,11.32l80-80A8,8,0,0,0,221.66,122.34Z\"></path></svg></a> </div> </div> <!-- service card --> <div class=\"transition-all duration-1000 bg-white hover:bg-teal-600 hover:shadow-xl m-2 p-4 relative z-40 group\"> <div class=\"absolute bg-teal-500 top-0 left-0 w-24 h-1 z-30 transition-all duration-200 group-hover:bg-white group-hover:w-1/2\"></div> <div class=\"py-2 px-2 md:px-9\"> <svg class=\"w-16 h-16 fill-teal-500 group-hover:fill-white\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 32 32\" id=\"polo-tshirt\"> <path d=\"m16.962 5.841 3.582.717-.716-4.115zM12.172 2.443l-.716 4.115 3.582-.717z\"></path> <path d=\"M28.488 7.301a5.354 5.354 0 0 0-2.743-3.305c-.112-.056-2.96-1.2-4.942-1.996l.87 4.987a.52.52 0 0 1-.488.746.535.535 0 0 1-.101-.01L16.5 6.806V12a.5.5 0 1 1-1 0V6.806l-4.583.917a.518.518 0 0 1-.613-.598L11.196 2c-1.982.796-4.828 1.94-4.94 1.996a5.36 5.36 0 0 0-2.75 3.328l-1.492 6.26c-.042.175.01.359.138.486l.608.608a5.487 5.487 0 0 0 3.907 1.618c.196 0 .375-.111.464-.287l1.072-2.145c.013.292.02.584.02.876V28.48c0 .231.153.435.375.499A27.03 27.03 0 0 0 16 30c2.508 0 5.015-.34 7.402-1.022a.52.52 0 0 0 .376-.5V14.74c0-.292.006-.584.019-.876l1.073 2.145a.519.519 0 0 0 .463.287 5.487 5.487 0 0 0 3.907-1.618l.608-.608a.518.518 0 0 0 .138-.487l-1.498-6.282zM17.03 11.5c-.276 0-.505-.224-.505-.5s.219-.5.495-.5h.01a.5.5 0 0 1 0 1zm0-2c-.276 0-.505-.224-.505-.5s.219-.5.495-.5h.01a.5.5 0 0 1 0 1z\"></path> </svg> <h3 class=\"mt-8 text-lg font-semibold text-black group-hover:text-white\">\nUnwavering Support\n</h3> <p class=\"my-4 text-base text-gray-600 group-hover:text-white\">\nWe're always here to answer your questions and guide you through\n                the process.\n</p> <a href=\"/\" class=\"flex font-light items-center gap-3 text-teal-700 group-hover:text-teal-100\">Learn more\n<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\" fill=\"currentColor\" viewBox=\"0 0 256 256\"><path d=\"M141.66,133.66l-80,80a8,8,0,0,1-11.32-11.32L124.69,128,50.34,53.66A8,8,0,0,1,61.66,42.34l80,80A8,8,0,0,1,141.66,133.66Zm80-11.32-80-80a8,8,0,0,0-11.32,11.32L204.69,128l-74.35,74.34a8,8,0,0,0,11.32,11.32l80-80A8,8,0,0,0,221.66,122.34Z\"></path></svg></a> </div> </div> <!-- service card --> <div class=\"transition-all duration-1000 bg-white hover:bg-teal-600 hover:shadow-xl m-2 p-4 relative z-40 group\"> <div class=\"absolute bg-teal-500 top-0 left-0 w-24 h-1 z-30 transition-all duration-200 group-hover:bg-white group-hover:w-1/2\"></div> <div class=\"py-2 px-2 md:px-9\"> <svg class=\"w-16 h-16 fill-teal-500 group-hover:fill-white\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 32 32\" id=\"polo-tshirt\"> <path d=\"m16.962 5.841 3.582.717-.716-4.115zM12.172 2.443l-.716 4.115 3.582-.717z\"></path> <path d=\"M28.488 7.301a5.354 5.354 0 0 0-2.743-3.305c-.112-.056-2.96-1.2-4.942-1.996l.87 4.987a.52.52 0 0 1-.488.746.535.535 0 0 1-.101-.01L16.5 6.806V12a.5.5 0 1 1-1 0V6.806l-4.583.917a.518.518 0 0 1-.613-.598L11.196 2c-1.982.796-4.828 1.94-4.94 1.996a5.36 5.36 0 0 0-2.75 3.328l-1.492 6.26c-.042.175.01.359.138.486l.608.608a5.487 5.487 0 0 0 3.907 1.618c.196 0 .375-.111.464-.287l1.072-2.145c.013.292.02.584.02.876V28.48c0 .231.153.435.375.499A27.03 27.03 0 0 0 16 30c2.508 0 5.015-.34 7.402-1.022a.52.52 0 0 0 .376-.5V14.74c0-.292.006-.584.019-.876l1.073 2.145a.519.519 0 0 0 .463.287 5.487 5.487 0 0 0 3.907-1.618l.608-.608a.518.518 0 0 0 .138-.487l-1.498-6.282zM17.03 11.5c-.276 0-.505-.224-.505-.5s.219-.5.495-.5h.01a.5.5 0 0 1 0 1zm0-2c-.276 0-.505-.224-.505-.5s.219-.5.495-.5h.01a.5.5 0 0 1 0 1z\"></path> </svg> <h3 class=\"mt-8 text-lg font-semibold text-black group-hover:text-white\">\nStrategic Design\n</h3> <p class=\"my-4 text-base text-gray-600 group-hover:text-white\">\nYour website will be meticulously crafted to attract your target\n                audience and achieve your business goals.\n</p> <a href=\"/\" class=\"flex font-light items-center gap-3 text-teal-700 group-hover:text-teal-100\">Learn more\n<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\" fill=\"currentColor\" viewBox=\"0 0 256 256\"><path d=\"M141.66,133.66l-80,80a8,8,0,0,1-11.32-11.32L124.69,128,50.34,53.66A8,8,0,0,1,61.66,42.34l80,80A8,8,0,0,1,141.66,133.66Zm80-11.32-80-80a8,8,0,0,0-11.32,11.32L204.69,128l-74.35,74.34a8,8,0,0,0,11.32,11.32l80-80A8,8,0,0,0,221.66,122.34Z\"></path></svg></a> </div> </div> </div> </div> </div> </div> </section> <!-- component --><section class=\"\"> <div class=\"py-10 sm:py-16 block lg:py-24 relative bg-opacity-50 z-40\"> <div class=\"relative mx-auto px-2 pb-6 md:pb-10 sm:max-w-xl md:max-w-full md:px-24 lg:max-w-screen-xl lg:px-8\"> <div class=\"px-2 mx-auto max-w-7xl sm:px-6 lg:px-8\"> <div class=\"max-w-xl mx-auto text-center\"> <div class=\"inline-flex px-4 py-1.5 mx-auto rounded-full\"> <h2 class=\"text-2xl md:text-4xl font-bold tracking-widest text-g uppercase\"> <span class=\"text-teal-500\">Cheap</span> Website Design Services\n</h2> </div> <p class=\"mt-4 text-base leading-relaxed text-gray-600\">\nWe offer a comprehensive suite of website services to meet your\n            unique requirements\n</p> </div> <div class=\"grid grid-cols-1 gap-2 mt-12 lg:grid-cols-3 lg:mt-20\"> <!-- service card --> <div class=\"transition-all duration-1000 bg-slate-100 hover:bg-teal-600 hover:shadow-xl m-2 p-4 relative z-40 group\"> <div class=\"absolute bg-teal-500 top-0 left-0 w-24 h-1 z-30 transition-all duration-200 group-hover:bg-white group-hover:w-1/2\"></div> <div class=\"py-2 px-2 md:px-9\"> <svg class=\"w-16 h-16 fill-teal-500 group-hover:fill-white\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 32 32\" id=\"polo-tshirt\"> <path d=\"m16.962 5.841 3.582.717-.716-4.115zM12.172 2.443l-.716 4.115 3.582-.717z\"></path> <path d=\"M28.488 7.301a5.354 5.354 0 0 0-2.743-3.305c-.112-.056-2.96-1.2-4.942-1.996l.87 4.987a.52.52 0 0 1-.488.746.535.535 0 0 1-.101-.01L16.5 6.806V12a.5.5 0 1 1-1 0V6.806l-4.583.917a.518.518 0 0 1-.613-.598L11.196 2c-1.982.796-4.828 1.94-4.94 1.996a5.36 5.36 0 0 0-2.75 3.328l-1.492 6.26c-.042.175.01.359.138.486l.608.608a5.487 5.487 0 0 0 3.907 1.618c.196 0 .375-.111.464-.287l1.072-2.145c.013.292.02.584.02.876V28.48c0 .231.153.435.375.499A27.03 27.03 0 0 0 16 30c2.508 0 5.015-.34 7.402-1.022a.52.52 0 0 0 .376-.5V14.74c0-.292.006-.584.019-.876l1.073 2.145a.519.519 0 0 0 .463.287 5.487 5.487 0 0 0 3.907-1.618l.608-.608a.518.518 0 0 0 .138-.487l-1.498-6.282zM17.03 11.5c-.276 0-.505-.224-.505-.5s.219-.5.495-.5h.01a.5.5 0 0 1 0 1zm0-2c-.276 0-.505-.224-.505-.5s.219-.5.495-.5h.01a.5.5 0 0 1 0 1z\"></path> </svg> <h3 class=\"mt-8 text-lg font-semibold text-black group-hover:text-white\">\nCustom Website Design & Development\n</h3> <p class=\"my-4 text-base text-gray-600 group-hover:text-white\">\nGet a website that's as unique as your business. We'll work\n                closely with you to understand your vision, brand, and goals to\n                craft a custom website that captivates your audience and drives\n                results.\n</p> <p class=\"my-4 text-base text-gray-600 group-hover:text-white\">\nFrom simple yet elegant designs to more complex functionalities,\n                we offer affordable solutions tailored to your specific needs.\n</p> </div> </div> <!-- service card --> <div class=\"transition-all duration-1000 bg-slate-100 hover:bg-teal-600 hover:shadow-xl m-2 p-4 relative z-40 group\"> <div class=\"absolute bg-teal-500 top-0 left-0 w-24 h-1 z-30 transition-all duration-200 group-hover:bg-white group-hover:w-1/2\"></div> <div class=\"py-2 px-2 md:px-9\"> <svg class=\"w-16 h-16 fill-teal-500 group-hover:fill-white\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 32 32\" id=\"polo-tshirt\"> <path d=\"m16.962 5.841 3.582.717-.716-4.115zM12.172 2.443l-.716 4.115 3.582-.717z\"></path> <path d=\"M28.488 7.301a5.354 5.354 0 0 0-2.743-3.305c-.112-.056-2.96-1.2-4.942-1.996l.87 4.987a.52.52 0 0 1-.488.746.535.535 0 0 1-.101-.01L16.5 6.806V12a.5.5 0 1 1-1 0V6.806l-4.583.917a.518.518 0 0 1-.613-.598L11.196 2c-1.982.796-4.828 1.94-4.94 1.996a5.36 5.36 0 0 0-2.75 3.328l-1.492 6.26c-.042.175.01.359.138.486l.608.608a5.487 5.487 0 0 0 3.907 1.618c.196 0 .375-.111.464-.287l1.072-2.145c.013.292.02.584.02.876V28.48c0 .231.153.435.375.499A27.03 27.03 0 0 0 16 30c2.508 0 5.015-.34 7.402-1.022a.52.52 0 0 0 .376-.5V14.74c0-.292.006-.584.019-.876l1.073 2.145a.519.519 0 0 0 .463.287 5.487 5.487 0 0 0 3.907-1.618l.608-.608a.518.518 0 0 0 .138-.487l-1.498-6.282zM17.03 11.5c-.276 0-.505-.224-.505-.5s.219-.5.495-.5h.01a.5.5 0 0 1 0 1zm0-2c-.276 0-.505-.224-.505-.5s.219-.5.495-.5h.01a.5.5 0 0 1 0 1z\"></path> </svg> <h3 class=\"mt-8 text-lg font-semibold text-black group-hover:text-white\">\nE-commerce Solutions\n</h3> <p class=\"my-4 text-base text-gray-600 group-hover:text-white\">\nReady to take your business online and start selling? Our\n                e-commerce solutions empower you to create a seamless and secure\n                online store.\n</p> <p class=\"my-4 text-base text-gray-600 group-hover:text-white\">\nWe'll handle everything from product displays and shopping cart\n                integration to secure payment gateways and inventory management,\n                ensuring a smooth and enjoyable shopping experience for your\n                customers.\n</p> </div> </div> <!-- service card --> <div class=\"transition-all duration-1000 bg-slate-100 hover:bg-teal-600 hover:shadow-xl m-2 p-4 relative z-40 group\"> <div class=\"absolute bg-teal-500 top-0 left-0 w-24 h-1 z-30 transition-all duration-200 group-hover:bg-white group-hover:w-1/2\"></div> <div class=\"py-2 px-2 md:px-9\"> <svg class=\"w-16 h-16 fill-teal-500 group-hover:fill-white\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 32 32\" id=\"polo-tshirt\"> <path d=\"m16.962 5.841 3.582.717-.716-4.115zM12.172 2.443l-.716 4.115 3.582-.717z\"></path> <path d=\"M28.488 7.301a5.354 5.354 0 0 0-2.743-3.305c-.112-.056-2.96-1.2-4.942-1.996l.87 4.987a.52.52 0 0 1-.488.746.535.535 0 0 1-.101-.01L16.5 6.806V12a.5.5 0 1 1-1 0V6.806l-4.583.917a.518.518 0 0 1-.613-.598L11.196 2c-1.982.796-4.828 1.94-4.94 1.996a5.36 5.36 0 0 0-2.75 3.328l-1.492 6.26c-.042.175.01.359.138.486l.608.608a5.487 5.487 0 0 0 3.907 1.618c.196 0 .375-.111.464-.287l1.072-2.145c.013.292.02.584.02.876V28.48c0 .231.153.435.375.499A27.03 27.03 0 0 0 16 30c2.508 0 5.015-.34 7.402-1.022a.52.52 0 0 0 .376-.5V14.74c0-.292.006-.584.019-.876l1.073 2.145a.519.519 0 0 0 .463.287 5.487 5.487 0 0 0 3.907-1.618l.608-.608a.518.518 0 0 0 .138-.487l-1.498-6.282zM17.03 11.5c-.276 0-.505-.224-.505-.5s.219-.5.495-.5h.01a.5.5 0 0 1 0 1zm0-2c-.276 0-.505-.224-.505-.5s.219-.5.495-.5h.01a.5.5 0 0 1 0 1z\"></path> </svg> <h3 class=\"mt-8 text-lg font-semibold text-black group-hover:text-white\">\nWebsite Maintenance & Updates\n</h3> <p class=\"my-4 text-base text-gray-600 group-hover:text-white\">\nKeep your website running smoothly and securely with our\n                professional maintenance and update services. We'll handle all\n                the technical aspects, including software updates, security\n                patches, backups, and performance optimization, so you can focus\n                on what you do best \u2013 running your business.\n</p> <p class=\"my-4 text-base text-gray-600 group-hover:text-white\">\nOur maintenance plans offer peace of mind and ensure your\n                website remains up-to-date and protected.\n</p> </div> </div> </div> </div> </div> </div> </section> <section class=\"bg-slate-100\"> <div class=\"mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8 lg:py-16\"> <div class=\"grid grid-cols-1 gap-y-8 lg:grid-cols-2 lg:items-center lg:gap-x-16\"> <div class=\"mx-auto max-w-lg text-center lg:mx-0 ltr:lg:text-left rtl:lg:text-right\"> <h2 class=\"text-3xl font-bold sm:text-4xl\">\nAffordable Doesn't Mean Cutting Corners\n</h2> <p class=\"mt-4 text-gray-600\">\nDispelling the Myth: Affordable Websites Can Be Exceptional\n</p> <p class=\"mt-4 text-gray-800\">\nDon't let the price fool you. We believe in delivering outstanding\n          quality at every budget level. Here's how we do it:\n</p> <a href=\"/website-packages\" class=\"mt-8 inline-block rounded bg-teal-600 px-12 py-3 text-sm font-medium text-white transition hover:bg-teal-700 focus:outline-none focus:ring focus:ring-yellow-400\">\nWebsite Design Packages\n</a> </div> <div class=\"grid grid-cols-1 gap-4 sm:grid-cols-1 text-gray-600\"> <!-- first --> <div class=\"block rounded-xl border border-gray-300 p-4 shadow-sm hover:border-gray-200 hover:ring-1 hover:bg-teal-50 hover:ring-gray-200 focus:outline-none focus:ring\"> <span class=\"text-teal-500 inline-block rounded-lg bg-gray-50 p-3\"> <svg class=\"size-12\" xmlns=\"http://www.w3.org/2000/svg\" width=\"32\" height=\"32\" viewBox=\"0 0 24 24\"> <path fill=\"currentColor\" d=\"m16 2l5 5v14.008a.993.993 0 0 1-.993.992H3.993A1 1 0 0 1 3 21.008V2.992C3 2.444 3.445 2 3.993 2zm1.657 10L14.12 8.464L12.707 9.88L14.828 12l-2.12 2.121l1.413 1.415zM6.343 12l3.536 3.536l1.414-1.415L9.172 12l2.12-2.121L9.88 8.464z\"></path> </svg> </span> <h3 class=\"mt-2 font-bold text-lg text-slate-700\">\nEfficient Workflows\n</h3> <p>\nWe've streamlined our processes to maximize efficiency and minimize\n            costs, without compromising quality.\n</p> </div> <!-- second --> <div class=\"block rounded-xl border border-gray-300 p-4 shadow-sm hover:border-gray-200 hover:ring-1 hover:bg-teal-50 hover:ring-gray-200 focus:outline-none focus:ring\"> <span class=\"text-teal-500 inline-block rounded-lg bg-gray-50 p-3\"> <svg class=\"size-12\" xmlns=\"http://www.w3.org/2000/svg\" width=\"32\" height=\"32\" viewBox=\"0 0 24 24\"> <path fill=\"currentColor\" d=\"m16 2l5 5v14.008a.993.993 0 0 1-.993.992H3.993A1 1 0 0 1 3 21.008V2.992C3 2.444 3.445 2 3.993 2zm1.657 10L14.12 8.464L12.707 9.88L14.828 12l-2.12 2.121l1.413 1.415zM6.343 12l3.536 3.536l1.414-1.415L9.172 12l2.12-2.121L9.88 8.464z\"></path> </svg> </span> <h3 class=\"mt-2 font-bold text-lg text-slate-700\">\nLeveraging Open-Source Power\n</h3> <p>\nWe use the power of free and open-source tools to create\n            high-quality websites without unnecessary expenses.\n</p> </div> <!-- third --> <div class=\"block rounded-xl border border-gray-300 p-4 shadow-sm hover:border-gray-200 hover:ring-1 hover:bg-teal-50 hover:ring-gray-200 focus:outline-none focus:ring\"> <span class=\"text-teal-500 inline-block rounded-lg bg-gray-50 p-3\"> <svg class=\"size-12\" xmlns=\"http://www.w3.org/2000/svg\" width=\"32\" height=\"32\" viewBox=\"0 0 24 24\"> <path fill=\"currentColor\" d=\"m16 2l5 5v14.008a.993.993 0 0 1-.993.992H3.993A1 1 0 0 1 3 21.008V2.992C3 2.444 3.445 2 3.993 2zm1.657 10L14.12 8.464L12.707 9.88L14.828 12l-2.12 2.121l1.413 1.415zM6.343 12l3.536 3.536l1.414-1.415L9.172 12l2.12-2.121L9.88 8.464z\"></path> </svg> </span> <h3 class=\"mt-2 font-bold text-lg text-slate-700\">\nTalented & Experienced Designers\n</h3> <p>\nOur team is comprised of skilled designers who are passionate about\n            creating impactful designs that align with your brand vision.\n</p> </div> </div> </div> </div> </section> <div class=\"bg-white py-12 sm:py-32\"> <div class=\"mx-auto max-w-7xl px-6 lg:px-8\"> <div class=\"mx-auto max-w-4xl sm:text-center\"> <h2 class=\"text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl\">\nSimple & Affordable Web Design Package\n</h2> <p class=\"mt-6 text-base leading-8 text-gray-600\">\nThis straightforward web design and development package is perfect\n              for small businesses and startups looking to establish a strong\n              online presence. For a single, affordable price, you\u2019ll receive a\n              responsive, user-friendly website designed to help you connect\n              with your audience and grow your business.\n</p> </div> <div class=\"mx-auto mt-16 max-w-2xl rounded-3xl ring-1 ring-gray-200 sm:mt-20 lg:mx-0 lg:flex lg:max-w-none\"> <div class=\"p-8 sm:p-10 lg:flex-auto\"> <h3 class=\"text-2xl font tracking-tight text-gray-900\">\nSimple Website Package\n</h3> <p class=\"mt-6 text-gray-800\">\nNo tricks, no hidden fees\u2014just a simple solution to get you\n                online quickly.\n</p> <p class=\"mt-6 text-base leading-7 text-gray-600\">\nPerfect for small businesses and startups, the Simple package\n                provides a solid foundation for your website. Enjoy a\n                professional, responsive website with essential features to help\n                you connect with customers.\n</p> <div class=\"mt-10 flex items-center gap-x-4\"> <h4 class=\"flex-none text-sm font-semibold leading-6 text-teal-600\">\nWhat\u2019s included\n</h4> <div class=\"h-px flex-auto bg-gray-100\"></div> </div> <ul role=\"list\" class=\"mt-8 grid grid-cols-1 gap-4 text-sm leading-6 text-gray-600 sm:grid-cols-2 sm:gap-6\"> <li class=\"flex gap-x-3\"> <svg class=\"h-6 w-5 flex-none text-teal-600\" viewBox=\"0 0 20 20\" fill=\"currentColor\" aria-hidden=\"true\"> <path fill-rule=\"evenodd\" d=\"M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z\" clip-rule=\"evenodd\"></path> </svg>\nContent management system\n</li> <li class=\"flex gap-x-3\"> <svg class=\"h-6 w-5 flex-none text-teal-600\" viewBox=\"0 0 20 20\" fill=\"currentColor\" aria-hidden=\"true\"> <path fill-rule=\"evenodd\" d=\"M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z\" clip-rule=\"evenodd\"></path> </svg>\nResponsive design\n</li> <li class=\"flex gap-x-3\"> <svg class=\"h-6 w-5 flex-none text-teal-600\" viewBox=\"0 0 20 20\" fill=\"currentColor\" aria-hidden=\"true\"> <path fill-rule=\"evenodd\" d=\"M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z\" clip-rule=\"evenodd\"></path> </svg>\nUp to 5 pages\n</li> <li class=\"flex gap-x-3\"> <svg class=\"h-6 w-5 flex-none text-teal-600\" viewBox=\"0 0 20 20\" fill=\"currentColor\" aria-hidden=\"true\"> <path fill-rule=\"evenodd\" d=\"M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z\" clip-rule=\"evenodd\"></path> </svg>\nContact form\n</li> </ul> </div> <div class=\"mt-2 p-2 lg:mt-0 lg:w-full lg:max-w-full lg:flex lg:align-center\"> <div class=\"rounded-2xl bg-gray-50 py-10 text-center ring-1 ring-inset ring-gray-900/5 lg:flex lg:flex-col lg:justify-center lg:py-16 lg:w-full\"> <div class=\"mx-auto max-w-xs px-8\"> <p class=\"text-base font-semibold text-gray-600\">\nPay once, own it forever\n</p> <p class=\"mt-6 flex items-baseline justify-center gap-x-2\"> <span class=\"text-5xl font-bold tracking-tight text-gray-900\">$249</span> <span class=\"text-sm font-semibold leading-6 tracking-wide text-gray-600\">USD</span> </p> <a href=\"/contact\" class=\"mt-10 block w-full rounded-md bg-teal-600 px-3 py-2 text-center text-sm font-semibold text-white shadow-sm hover:bg-teal-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-teal-600\">Order</a> <p class=\"mt-6 text-xs leading-5 text-gray-600\"> <a class=\"text-teal-700\" href=\"/blog/what-is-domain-hosting\">Domain and web hosting</a> are not included\n</p> </div> </div> </div> </div> </div> </div> <section class=\"bg-slate-100\"> <div class=\"mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8 lg:py-16\"> <div class=\"grid grid-cols-1 gap-y-8 lg:grid-cols-2 lg:items-center lg:gap-x-16\"> <div class=\"mx-auto max-w-lg text-center lg:mx-0 ltr:lg:text-left rtl:lg:text-right\"> <h3 class=\"text-2xl font-bold sm:text-3xl\">\nOur Approach to Web Design\n</h3> <p class=\"mt-4 text-gray-700\">\nGood website design is about creating seamless and intuitive\n          experiences that turn visitors into customers. That\u2019s why we\n          prioritize user experience (UX) in every website we build.\n</p> <p class=\"mt-4 text-gray-800\">\nChoose beauchampwebdesign.co.uk for a web design experience that puts\n          your users first.\n</p> <a href=\"/contact\" class=\"mt-8 inline-block rounded bg-teal-600 px-12 py-3 text-sm font-medium text-white transition hover:bg-teal-700 focus:outline-none focus:ring focus:ring-yellow-400\">\nContact Us\n</a> </div> <div class=\"grid grid-cols-1 gap-4 sm:grid-cols-1 text-gray-600\"> <!-- first --> <div class=\"block bg-white rounded-xl border border-teal-300 p-4 shadow-sm hover:border-gray-200 hover:ring-1 hover:bg-teal-50 hover:ring-gray-200 focus:outline-none focus:ring\"> <span class=\"text-teal-500 inline-block rounded-lg bg-gray-50 p-3\"> <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"32\" height=\"32\" viewBox=\"0 0 24 24\"><path fill=\"currentColor\" d=\"m10.6 16.2l7.05-7.05l-1.4-1.4l-5.65 5.65l-2.85-2.85l-1.4 1.4zM5 21q-.825 0-1.412-.587T3 19V5q0-.825.588-1.412T5 3h14q.825 0 1.413.588T21 5v14q0 .825-.587 1.413T19 21z\"></path></svg> </span> <h4 class=\"mt-2 font-bold text-lg text-slate-700\">\nUser-Centric Strategy\n</h4> <p>\nWe start by understanding your audience\u2014how they think, what they\n            need, and how they interact with digital spaces.\n</p> </div> <!-- second --> <div class=\"block bg-white rounded-xl border border-teal-300 p-4 shadow-sm hover:border-gray-200 hover:ring-1 hover:bg-teal-50 hover:ring-gray-200 focus:outline-none focus:ring\"> <span class=\"text-teal-500 inline-block rounded-lg bg-gray-50 p-3\"> <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"32\" height=\"32\" viewBox=\"0 0 24 24\"><path fill=\"currentColor\" d=\"m10.6 16.2l7.05-7.05l-1.4-1.4l-5.65 5.65l-2.85-2.85l-1.4 1.4zM5 21q-.825 0-1.412-.587T3 19V5q0-.825.588-1.412T5 3h14q.825 0 1.413.588T21 5v14q0 .825-.587 1.413T19 21z\"></path></svg> </span> <h4 class=\"mt-2 font-bold text-lg text-slate-700\">\nResponsive Design\n</h4> <p>\nWe ensure your website looks and performs flawlessly across all\n            devices, providing a consistent and enjoyable experience whether\n            users are on a desktop, tablet, or smartphone.\n</p> </div> <!-- third --> <div class=\"block bg-white rounded-xl border border-teal-300 p-4 shadow-sm hover:border-gray-200 hover:ring-1 hover:bg-teal-50 hover:ring-gray-200 focus:outline-none focus:ring\"> <span class=\"text-teal-500 inline-block rounded-lg bg-gray-50 p-3\"> <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"32\" height=\"32\" viewBox=\"0 0 24 24\"><path fill=\"currentColor\" d=\"m10.6 16.2l7.05-7.05l-1.4-1.4l-5.65 5.65l-2.85-2.85l-1.4 1.4zM5 21q-.825 0-1.412-.587T3 19V5q0-.825.588-1.412T5 3h14q.825 0 1.413.588T21 5v14q0 .825-.587 1.413T19 21z\"></path></svg> </span> <h4 class=\"mt-2 font-bold text-lg text-slate-700\">\nPerformance & Speed\n</h4> <p>\nA slow website loses visitors. We optimize for speed, ensuring\n            lightning-fast load times that keep users engaged.\n</p> </div> </div> </div> </div> </section> </main> <div class=\"flex items-end w-full bg-white\"> <footer class=\"w-full text-gray-800 bg-slate-200 body-font\"> <div class=\"container flex flex-col flex-wrap px-5 py-24 mx-auto md:items-center lg:items-start md:flex-row md:flex-no-wrap\"> <div class=\"flex-shrink-0 w-64 mx-auto text-center md:mx-0 md:text-left\"> <span class=\"flex items-center justify-center font-medium text-teal-600 title-font md:justify-start\">\nbeauchampwebdesign.co.uk\n</span> <p class=\"mt-2 text-sm text-gray-500\">\nRidiculously Cheap Website Design\n</p> </div> <div class=\"flex flex-wrap flex-grow mt-10 -mb-10 text-center md:pl-20 md:mt-0 md:text-left\"> <div class=\"w-full px-4 lg:w-1/4 md:w-1/2\"> <p class=\"mb-3 text-sm font-medium tracking-widest text-gray-900 uppercase title-font\">\nAbout\n</p> <ul class=\"mb-10 list-none text-sm\"> <li class=\"mt-1\"> <a href=\"/\" class=\"text-gray-700 hover:text-teal-800\">Web Design Services</a> </li> <li class=\"mt-1\"> <a href=\"/website-packages\" class=\"text-gray-700 hover:text-teal-800\">Pricing</a> </li> <li class=\"mt-1\"> <a href=\"/blog\" class=\"text-gray-700 hover:text-teal-800\">Blog</a> </li> </ul> </div> <div class=\"w-full px-4 lg:w-1/4 md:w-1/2\"> <p class=\"mb-3 text-sm font-medium tracking-widest text-gray-900 uppercase title-font\">\nNEW ARTICLES\n</p> <ul class=\"mb-10 list-none text-sm\"> <li class=\"mt-1\"> <a href=\"/blog/what-is-domain-hosting\" class=\"text-gray-700 hover:text-teal-800\">What is Domain and Hosting?</a> </li> <li class=\"mt-1\"> <a href=\"/blog/what-is-link-building\" class=\"text-gray-700 hover:text-teal-800\">What is Link Building</a> </li> <li class=\"mt-1\"> <a href=\"/blog/what-is-favicon\" class=\"text-gray-700 hover:text-teal-800\">What is a Favicon?</a> </li> </ul> </div> <div class=\"w-full px-4 lg:w-1/4 md:w-1/2\"> <p class=\"mb-3 text-sm font-medium tracking-widest text-gray-900 uppercase title-font\">\nAbout\n</p> <ul class=\"mb-10 list-none text-sm\"> <li class=\"mt-1\"> <a href=\"/website-packages\" class=\"text-gray-700 hover:text-teal-800\">Pricing</a> </li> <li class=\"mt-1\"> <a href=\"/faq\" class=\"text-gray-700 hover:text-teal-800\">Frequently Asked Questions</a> </li> </ul> </div> <div class=\"w-full px-4 lg:w-1/4 md:w-1/2\"> <p class=\"mb-3 text-sm font-medium tracking-widest text-gray-900 uppercase title-font\">\nContact\n</p> <ul class=\"mb-10 list-none text-sm\"> <li class=\"mt-1\"> <a href=\"/contact\" class=\"text-gray-700 hover:text-teal-800\">Send a Message</a> </li> <li class=\"mt-1\"> <a href=\"/contact\" class=\"text-gray-700 hover:text-teal-800\">Request a Quote</a> </li> <li class=\"mt-1\"> <a href=\"mailto:info@beauchampwebdesign.co.uk\" class=\"text-gray-700 hover:text-teal-800\">info@beauchampwebdesign.co.uk</a> </li> </ul> </div> </div> </div> </footer> </div> <!-- 100% privacy-first analytics --> <script async defer src=\"https://scripts.simpleanalyticscdn.com/latest.js\"></script> <noscript><img src=\"https://queue.simpleanalyticscdn.com/noscript.gif\" alt=\"\" referrerpolicy=\"no-referrer-when-downgrade\"></noscript> </body></html>",
+        "server_hash": -590611983,
+        "location": "/",
+        "components": {
+          "Astro": {
+            "categories": [
+              "Static site generator",
+              "JavaScript frameworks"
+            ],
+            "versions": [
+              "4.16.18"
+            ]
+          },
+          "Simple Analytics": {
+            "categories": [
+              "Analytics"
+            ]
+          },
+          "Abicart": {
+            "categories": [
+              "Ecommerce"
+            ]
+          }
+        },
+        "securitytxt_hash": null,
+        "server": "Vercel",
+        "sitemap": null,
+        "html_hash": 1763016763
+      },
+      "os": null,
+      "timestamp": "2025-05-10T16:06:59.160013",
+      "isp": "Amazon.com, Inc.",
+      "transport": "tcp",
+      "_shodan": {
+        "region": "na",
+        "module": "https",
+        "ptr": true,
+        "options": {
+          "hostname": "beauchampwebdesign.co.uk"
+        },
+        "id": "fc8a9a89-9343-4428-9e51-ee95df2e5d27",
+        "crawler": "f33d80a7ca4b7417d1867303f3af6b398f76f284"
+      },
+      "ssl": {
+        "chain_sha256": [
+          "a55db0cf0ef51b1e5463d379948c7d7174b2d497ce60ff934314dab44583c086",
+          "9d7c3f1aa6ad2b2ec0d5cf1e246f8d9ae6cbc9fd0755ad37bb974b1f2fb603f3"
+        ],
+        "jarm": "00000000000000000000000000000000000000000000000000000000000000",
+        "tlsext": [],
+        "chain": [
+          "-----BEGIN CERTIFICATE-----\nMIIFMTCCBBmgAwIBAgISBaoNjb9ZcDO2LTX27aDQm+8iMA0GCSqGSIb3DQEBCwUA\nMDMxCzAJBgNVBAYTAlVTMRYwFAYDVQQKEw1MZXQncyBFbmNyeXB0MQwwCgYDVQQD\nEwNSMTAwHhcNMjUwNDI0MDgzMzQxWhcNMjUwNzIzMDgzMzQwWjAjMSEwHwYDVQQD\nExhiZWF1Y2hhbXB3ZWJkZXNpZ24uY28udWswggEiMA0GCSqGSIb3DQEBAQUAA4IB\nDwAwggEKAoIBAQDbG3JWYBcjZD+gnZsb9QkBdgiUSot8XlIb1eYbnxLDvu3x1h8k\nG8GP1F3dkkCMhE412sqRz4FvxVsj55C3N/21tai6JLK0krh3ZKwpMXMSJdiiWZps\ng27COlUnmRZB8jdlCRycP/nirFgZrBcQ3LWmgpugdinQ6jlubbYd2dpTRwLFGvRy\noOFShpPEkWkz7pjTRaPaNRJSxOEim3BYrmwh6Sid5ZtSNAshyyXbbDzVB73fRAAB\nh8Z5hjWfZ0ZGMAzIULFsfZChT/ivdznf/BVNrgemUghVWpbxdwvLh7EoDFNAtVtZ\noY3yz/w5ovEYTsW2wdV15jfuehFn4NuY91frAgMBAAGjggJNMIICSTAOBgNVHQ8B\nAf8EBAMCBaAwHQYDVR0lBBYwFAYIKwYBBQUHAwEGCCsGAQUFBwMCMAwGA1UdEwEB\n/wQCMAAwHQYDVR0OBBYEFIow83PS/0LreFwPlrRrm/IsfJSzMB8GA1UdIwQYMBaA\nFLu8w0el5LypxsOkcgwQjaI14cjoMFcGCCsGAQUFBwEBBEswSTAiBggrBgEFBQcw\nAYYWaHR0cDovL3IxMC5vLmxlbmNyLm9yZzAjBggrBgEFBQcwAoYXaHR0cDovL3Ix\nMC5pLmxlbmNyLm9yZy8wIwYDVR0RBBwwGoIYYmVhdWNoYW1wd2ViZGVzaWduLmNv\nLnVrMBMGA1UdIAQMMAowCAYGZ4EMAQIBMC4GA1UdHwQnMCUwI6AhoB+GHWh0dHA6\nLy9yMTAuYy5sZW5jci5vcmcvMzUuY3JsMIIBBQYKKwYBBAHWeQIEAgSB9gSB8wDx\nAHcADeHyMCvTDcFAYhIJ6lUu/Ed0fLHX6TDvDkIetH5OqjQAAAGWZyPzOQAABAMA\nSDBGAiEArCW0bMRznIlwTx/JDqlzlQbgcI5W1txAqqbDmnWBIA0CIQD3wsTczCHn\neXXe9KOw8pSoZt1Ta6Biv9krbG76GaGVNwB2AMz7D2qFcQll/pWbU87psnwi6YVc\nDZeNtql+VMD+TA2wAAABlmcj80QAAAQDAEcwRQIhAPnMTiPLZQd5wAiIYWAnmUtV\nNPUhZwBv/cF4yZhSEC4/AiAz+3DlgAidIP+Lbni5eXSe12j6GrhaMuE2v6YhWS/V\n5TANBgkqhkiG9w0BAQsFAAOCAQEAxSyhOQg7eyvz70VJ8b5wDezNxr2GM/BuUzss\nKcO/ad+0lXXBW/H/7XNl8WnxH0rFHeXUnwXSksliGEjtU/K0b/LawbfrNJ1lT4FY\nM2qOYk6DjWUrYWMYbXvHpqVeJR18jRqN2tk1+nKIHeAoWYwk2LbQuiEDxkwFacqo\nCcy6/qfw0PnnyWq/6EWSoOvVQO9etH0hVIMDzSlcFRYTRRQMxcVrRZMov0i2KRhY\nE0xV5nKiFNdDtSpONgy6ebkKdwt/5QGeKSBKWfgFrn2gDTQBzXEZLl467OdsD977\ns4GCsP7As/qsxU8Atf9cuqRXIELqY9RsTqm0hwcNLLtBthdtCg==\n-----END CERTIFICATE-----\n",
+          "-----BEGIN CERTIFICATE-----\nMIIFBTCCAu2gAwIBAgIQS6hSk/eaL6JzBkuoBI110DANBgkqhkiG9w0BAQsFADBP\nMQswCQYDVQQGEwJVUzEpMCcGA1UEChMgSW50ZXJuZXQgU2VjdXJpdHkgUmVzZWFy\nY2ggR3JvdXAxFTATBgNVBAMTDElTUkcgUm9vdCBYMTAeFw0yNDAzMTMwMDAwMDBa\nFw0yNzAzMTIyMzU5NTlaMDMxCzAJBgNVBAYTAlVTMRYwFAYDVQQKEw1MZXQncyBF\nbmNyeXB0MQwwCgYDVQQDEwNSMTAwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEK\nAoIBAQDPV+XmxFQS7bRH/sknWHZGUCiMHT6I3wWd1bUYKb3dtVq/+vbOo76vACFL\nYlpaPAEvxVgD9on/jhFD68G14BQHlo9vH9fnuoE5CXVlt8KvGFs3Jijno/QHK20a\n/6tYvJWuQP/py1fEtVt/eA0YYbwX51TGu0mRzW4Y0YCF7qZlNrx06rxQTOr8IfM4\nFpOUurDTazgGzRYSespSdcitdrLCnF2YRVxvYXvGLe48E1KGAdlX5jgc3421H5KR\nmudKHMxFqHJV8LDmowfs/acbZp4/SItxhHFYyTr6717yW0QrPHTnj7JHwQdqzZq3\nDZb3EoEmUVQK7GH29/Xi8orIlQ2NAgMBAAGjgfgwgfUwDgYDVR0PAQH/BAQDAgGG\nMB0GA1UdJQQWMBQGCCsGAQUFBwMCBggrBgEFBQcDATASBgNVHRMBAf8ECDAGAQH/\nAgEAMB0GA1UdDgQWBBS7vMNHpeS8qcbDpHIMEI2iNeHI6DAfBgNVHSMEGDAWgBR5\ntFnme7bl5AFzgAiIyBpY9umbbjAyBggrBgEFBQcBAQQmMCQwIgYIKwYBBQUHMAKG\nFmh0dHA6Ly94MS5pLmxlbmNyLm9yZy8wEwYDVR0gBAwwCjAIBgZngQwBAgEwJwYD\nVR0fBCAwHjAcoBqgGIYWaHR0cDovL3gxLmMubGVuY3Iub3JnLzANBgkqhkiG9w0B\nAQsFAAOCAgEAkrHnQTfreZ2B5s3iJeE6IOmQRJWjgVzPw139vaBw1bGWKCIL0vIo\nzwzn1OZDjCQiHcFCktEJr59L9MhwTyAWsVrdAfYf+B9haxQnsHKNY67u4s5Lzzfd\nu6PUzeetUK29v+PsPmI2cJkxp+iN3epi4hKu9ZzUPSwMqtCceb7qPVxEbpYxY1p9\n1n5PJKBLBX9eb9LU6l8zSxPWV7bK3lG4XaMJgnT9x3ies7msFtpKK5bDtotij/l0\nGaKeA97pb5uwD9KgWvaFXMIEt8jVTjLEvwRdvCn294GPDF08U8lAkIv7tghluaQh\n1QnlE4SEN4LOECj8dsIGJXpGUk3aU3KkJz9icKy+aUgA+2cP21uh6NcDIS3XyfaZ\nQjmDQ993ChII8SXWupQZVBiIpcWO4RqZk3lr7Bz5MUCwzDIA359e57SSq5CCkY0N\n4B6Vulk7LktfwrdGNVI5BsC9qqxSwSKgRJeZ9wygIaehbHFHFhcBaMDKpiZlBHyz\nrsnnlFXCb5s8HKn5LsUgGvB24L7sGNZP2CX7dhHov+YhD+jozLW2p9W4959Bz2Ei\nRmqDtmiXLnzqTpXbI+suyCsohKRg6Un0RC47+cpiVwHiXZAW+cn8eiNIjqbVgXLx\nKPpdzvvtTnOPlC7SQZSYmdunr3Bf9b77AiC/ZidstK36dRILKz7OA54=\n-----END CERTIFICATE-----\n"
+        ],
+        "versions": [
+          "-TLSv1",
+          "-SSLv2",
+          "-SSLv3",
+          "-TLSv1.1",
+          "TLSv1.2",
+          "TLSv1.3"
+        ],
+        "acceptable_cas": [],
+        "alpn": [],
+        "cert": {
+          "sig_alg": "sha256WithRSAEncryption",
+          "issued": "20250424083341Z",
+          "expires": "20250723083340Z",
+          "pubkey": {
+            "bits": 2048,
+            "type": "rsa"
+          },
+          "version": 2,
+          "extensions": [
+            {
+              "critical": true,
+              "data": "\\x03\\x02\\x05\\xa0",
+              "name": "keyUsage"
+            },
+            {
+              "data": "0\\x14\\x06\\x08+\\x06\\x01\\x05\\x05\\x07\\x03\\x01\\x06\\x08+\\x06\\x01\\x05\\x05\\x07\\x03\\x02",
+              "name": "extendedKeyUsage"
+            },
+            {
+              "critical": true,
+              "data": "0\\x00",
+              "name": "basicConstraints"
+            },
+            {
+              "data": "\\x04\\x14\\x8a0\\xf3s\\xd2\\xffB\\xebx\\\\\\x0f\\x96\\xb4k\\x9b\\xf2,|\\x94\\xb3",
+              "name": "subjectKeyIdentifier"
+            },
+            {
+              "data": "0\\x16\\x80\\x14\\xbb\\xbc\\xc3G\\xa5\\xe4\\xbc\\xa9\\xc6\\xc3\\xa4r\\x0c\\x10\\x8d\\xa25\\xe1\\xc8\\xe8",
+              "name": "authorityKeyIdentifier"
+            },
+            {
+              "data": "0I0\"\\x06\\x08+\\x06\\x01\\x05\\x05\\x070\\x01\\x86\\x16http://r10.o.lencr.org0#\\x06\\x08+\\x06\\x01\\x05\\x05\\x070\\x02\\x86\\x17http://r10.i.lencr.org/",
+              "name": "authorityInfoAccess"
+            },
+            {
+              "data": "0\\x1a\\x82\\x18beauchampwebdesign.co.uk",
+              "name": "subjectAltName"
+            },
+            {
+              "data": "0\\n0\\x08\\x06\\x06g\\x81\\x0c\\x01\\x02\\x01",
+              "name": "certificatePolicies"
+            },
+            {
+              "data": "0%0#\\xa0!\\xa0\\x1f\\x86\\x1dhttp://r10.c.lencr.org/35.crl",
+              "name": "crlDistributionPoints"
+            },
+            {
+              "data": "\\x04\\x81\\xf3\\x00\\xf1\\x00w\\x00\\r\\xe1\\xf20+\\xd3\\r\\xc1@b\\x12\\t\\xeaU.\\xfcGt|\\xb1\\xd7\\xe90\\xef\\x0eB\\x1e\\xb4~N\\xaa4\\x00\\x00\\x01\\x96g#\\xf39\\x00\\x00\\x04\\x03\\x00H0F\\x02!\\x00\\xac%\\xb4l\\xc4s\\x9c\\x89pO\\x1f\\xc9\\x0e\\xa9s\\x95\\x06\\xe0p\\x8eV\\xd6\\xdc@\\xaa\\xa6\\xc3\\x9au\\x81 \\r\\x02!\\x00\\xf7\\xc2\\xc4\\xdc\\xcc!\\xe7yu\\xde\\xf4\\xa3\\xb0\\xf2\\x94\\xa8f\\xddSk\\xa0b\\xbf\\xd9+ln\\xfa\\x19\\xa1\\x957\\x00v\\x00\\xcc\\xfb\\x0fj\\x85q\\te\\xfe\\x95\\x9bS\\xce\\xe9\\xb2|\"\\xe9\\x85\\\\\\r\\x97\\x8d\\xb6\\xa9~T\\xc0\\xfeL\\r\\xb0\\x00\\x00\\x01\\x96g#\\xf3D\\x00\\x00\\x04\\x03\\x00G0E\\x02!\\x00\\xf9\\xccN#\\xcbe\\x07y\\xc0\\x08\\x88a`\\'\\x99KU4\\xf5!g\\x00o\\xfd\\xc1x\\xc9\\x98R\\x10.?\\x02 3\\xfbp\\xe5\\x80\\x08\\x9d \\xff\\x8bnx\\xb9yt\\x9e\\xd7h\\xfa\\x1a\\xb8Z2\\xe16\\xbf\\xa6!Y/\\xd5\\xe5",
+              "name": "ct_precert_scts"
+            }
+          ],
+          "fingerprint": {
+            "sha256": "a55db0cf0ef51b1e5463d379948c7d7174b2d497ce60ff934314dab44583c086",
+            "sha1": "1acfbbd4684703157a25329f101eafb13e0a6759"
+          },
+          "serial": 493427447994189294936796613003561053974306,
+          "issuer": {
+            "C": "US",
+            "CN": "R10",
+            "O": "Let's Encrypt"
+          },
+          "expired": false,
+          "subject": {
+            "CN": "beauchampwebdesign.co.uk"
+          }
+        },
+        "cipher": {
+          "version": "TLSv1.3",
+          "bits": 128,
+          "name": "TLS_AES_128_GCM_SHA256"
+        },
+        "trust": {
+          "revoked": false,
+          "browser": null
+        },
+        "handshake_states": [
+          "before SSL initialization",
+          "SSLv3/TLS write client hello",
+          "SSLv3/TLS read server hello",
+          "TLSv1.3 read encrypted extensions",
+          "SSLv3/TLS read server certificate",
+          "TLSv1.3 read server certificate verify",
+          "SSLv3/TLS read finished",
+          "SSLv3/TLS write change cipher spec",
+          "SSLv3/TLS write finished",
+          "SSL negotiation finished successfully"
+        ],
+        "ja3s": "dc72e6e41d079db48ea7e4133eb74749",
+        "ocsp": {}
+      },
+      "hostnames": [
+        "beauchampwebdesign.co.uk"
+      ],
+      "location": {
+        "city": "Walnut",
+        "region_code": "CA",
+        "area_code": null,
+        "longitude": -117.8546,
+        "latitude": 34.0183,
+        "country_code": "US",
+        "country_name": "United States"
+      },
+      "ip": 1280054549,
+      "domains": [
+        "beauchampwebdesign.co.uk"
+      ],
+      "org": "Vercel, Inc",
+      "data": "HTTP/1.1 200 OK\r\nAccept-Ranges: bytes\r\nAccess-Control-Allow-Origin: *\r\nAge: 425615\r\nCache-Control: public, max-age=0, must-revalidate\r\nContent-Disposition: inline\r\nContent-Length: 40405\r\nContent-Type: text/html; charset=utf-8\r\nDate: Sat, 10 May 2025 16:06:59 GMT\r\nEtag: \"dccaec83d516d9c37a07420621dbdc3d\"\r\nLast-Modified: Mon, 05 May 2025 17:53:23 GMT\r\nServer: Vercel\r\nStrict-Transport-Security: max-age=63072000\r\nX-Vercel-Cache: HIT\r\nX-Vercel-Id: sfo1::7gsfk-1746893218986-43ba781d33e2\r\n\r\n",
+      "port": 443,
+      "opts": {
+        "vulns": [],
+        "heartbleed": "2025/05/10 16:07:06 76.76.21.21:443 - SAFE\n"
+      },
+      "ip_str": "76.76.21.21"
+    }
+  ],
+  "asn": "AS16509",
+  "city": "Walnut",
+  "latitude": 34.0183,
+  "isp": "Amazon.com, Inc.",
+  "longitude": -117.8546,
+  "last_update": "2025-05-10T16:07:51.233992",
+  "country_name": "United States",
+  "ip_str": "76.76.21.21",
+  "os": null,
+  "ports": [
+    80,
+    443
+  ]
+}
+
+[+] VirusTotal Info
+[-] VirusTotal Error: 'Virustotal' object has no attribute 'domain_report'
+
+
+--- Error for michaelkolesidis.com ---
+[nltk_data] Downloading package punkt_tab to /Users/arsh/nltk_data...
+[nltk_data]   Package punkt_tab is already up-to-date!
+2025-05-10 22:37:33,233 - INFO - Successfully loaded the spaCy NLP model
+2025-05-10 22:37:33,233 - INFO - Starting crawl of https://michaelkolesidis.com
+2025-05-10 22:37:33,233 - INFO - Processing https://michaelkolesidis.com
+2025-05-10 22:37:33,347 - INFO - Successfully fetched content from https://michaelkolesidis.com
+
+--- Output for andrej.com ---
+Enter the domain: 
+Potential Owners Found:
+- Analytica
+- Andrej
+- Andrej Bauer
+- Andromeda
+- Avtomatski
+- Bauer
+- Dodatni
+- Fakulteta
+- Fakulteti
+- Formalizacija
+- Grafi
+- Hilbertove
+- Jadranska
+- Kontakt
+- Marshall
+- Mastodon
+- Ostalo
+- Predmeti
+Za
+- Principi
+- Programska
+- Zanimajo
+
+Internal Links Found:
+- http://andrej.com/
+- http://andrej.com/analytica/
+- http://andrej.com/zapiski/
+- http://andrej.com/zapiski/?C=D;O=A
+- http://andrej.com/zapiski/?C=M;O=A
+- http://andrej.com/zapiski/?C=N;O=A
+- http://andrej.com/zapiski/?C=N;O=D
+- http://andrej.com/zapiski/?C=S;O=A
+- http://andrej.com/zapiski/FIZ-RAC-2016/
+- http://andrej.com/zapiski/FIZ-RAC-2017/
+- http://andrej.com/zapiski/FIZ-RAC-2018/
+- http://andrej.com/zapiski/FIZ-RAC-2019/
+- http://andrej.com/zapiski/FIZ-RAC-2020/
+- http://andrej.com/zapiski/FP-2014/
+- http://andrej.com/zapiski/HoTT-2019/
+- http://andrej.com/zapiski/ISRM-LOGRAC-2022/
+- http://andrej.com/zapiski/ISRM-PPJ-2018/
+- http://andrej.com/zapiski/ISRM-PPJ-2019/
+- http://andrej.com/zapiski/ISRM-PPJ-2020/
+- http://andrej.com/zapiski/ISRM-PPJ-2021/
+- http://andrej.com/zapiski/ISRM-PPJ-2022/
+- http://andrej.com/zapiski/ISRM-PPJ-2023/
+- http://andrej.com/zapiski/ISRM-PPJ-2023/?C=D;O=A
+- http://andrej.com/zapiski/ISRM-PPJ-2023/?C=M;O=A
+- http://andrej.com/zapiski/ISRM-PPJ-2023/?C=N;O=D
+- http://andrej.com/zapiski/ISRM-PPJ-2023/?C=S;O=A
+- http://andrej.com/zapiski/ISRM-PPJ-2023/ISRM-PPJ-2023-02-22-ukazni-programski-jezik/
+- http://andrej.com/zapiski/ISRM-PPJ-2023/ISRM-PPJ-2023-03-01-pravilnost-programov/
+- http://andrej.com/zapiski/ISRM-PPJ-2023/ISRM-PPJ-2023-03-15-lambda-racun/
+- http://andrej.com/zapiski/ISRM-PPJ-2023/ISRM-PPJ-2023-03-22-deklarativno-programiranje/
+- http://andrej.com/zapiski/ISRM-PPJ-2023/ISRM-PPJ-2023-03-29-rekurzija/
+- http://andrej.com/zapiski/ISRM-PPJ-2023/ISRM-PPJ-2023-04-05-tokovi-in-polimorfizem/
+- http://andrej.com/zapiski/ISRM-PPJ-2023/ISRM-PPJ-2023-04-12-specifikacija-in-implementacija/
+- http://andrej.com/zapiski/ISRM-PPJ-2023/ISRM-PPJ-2023-04-19-logicno-programiranje/
+- http://andrej.com/zapiski/ISRM-PPJ-2023/ISRM-PPJ-2023-04-26-logicno-programiranje-z-omejitvami/
+- http://andrej.com/zapiski/ISRM-PPJ-2023/ISRM-PPJ-2023-05-03-podtipi-in-objekti/
+- http://andrej.com/zapiski/ISRM-PPJ-2023/ISRM-PPJ-2023-05-10-haskell-razredi-tipov/
+- http://andrej.com/zapiski/ISRM-PPJ-2023/ISRM-PPJ-2023-05-17-monade/
+- http://andrej.com/zapiski/ISRM-PPJ-2023/ISRM-PPJ-2023-05-24-algebrajski-racunski-ucinki/
+- http://andrej.com/zapiski/ISRM-PPJ-2023/book/
+- http://andrej.com/zapiski/ISRM-PPJ-2025/
+- http://andrej.com/zapiski/ISRM-TPJ/
+- http://andrej.com/zapiski/LMN-2014/
+- http://andrej.com/zapiski/LVR-2014/
+- http://andrej.com/zapiski/MAT-FORMATH-2024/
+- http://andrej.com/zapiski/MAT-KardA/
+- http://andrej.com/zapiski/MAT-LMN-2018/
+- http://andrej.com/zapiski/MAT-LMN-2019/
+- http://andrej.com/zapiski/MAT-LMN-2021/
+- http://andrej.com/zapiski/MAT-LMN-2022/
+- http://andrej.com/zapiski/MAT-POP-2016/
+- http://andrej.com/zapiski/MAT-POP-2016/?C=D;O=A
+- http://andrej.com/zapiski/MAT-POP-2016/?C=M;O=A
+- http://andrej.com/zapiski/MAT-POP-2016/?C=N;O=D
+- http://andrej.com/zapiski/MAT-POP-2016/?C=S;O=A
+- http://andrej.com/zapiski/MAT-POP-2016/MAT-POP-2016-10-10/
+- http://andrej.com/zapiski/MAT-POP-2016/MAT-POP-2016-10-17/
+- http://andrej.com/zapiski/MAT-POP-2016/MAT-POP-2016-10-19/
+- http://andrej.com/zapiski/MAT-POP-2016/MAT-POP-2016-10-24/
+- http://andrej.com/zapiski/MAT-POP-2016/MAT-POP-2016-11-14/
+- http://andrej.com/zapiski/MAT-POP-2016/MAT-POP-2016-11-28/
+- http://andrej.com/zapiski/MAT-POP-2016/MAT-POP-2016-12-05/
+- http://andrej.com/zapiski/MAT-POP-2016/MAT-POP-2016-12-12/
+- http://andrej.com/zapiski/MAT-POP-2016/MAT-POP-2017-01-04/
+- http://andrej.com/zapiski/MAT-POP-2016/MAT-POP-2017-01-09/
+- http://andrej.com/zapiski/MAT-POP-2016/MAT-POP-2017-01-16/
+- http://andrej.com/zapiski/MAT-PRO2-2016/
+- http://andrej.com/zapiski/MAT-PRO2-2017/
+- http://andrej.com/zapiski/MAT-PRO2-2018/
+- http://andrej.com/zapiski/MAT-RP-2018/
+- http://andrej.com/zapiski/MAT-RP-2019/
+- http://andrej.com/zapiski/MAT-RP-2019/?C=D;O=A
+- http://andrej.com/zapiski/MAT-RP-2019/?C=M;O=A
+- http://andrej.com/zapiski/MAT-RP-2019/?C=N;O=A
+- http://andrej.com/zapiski/MAT-RP-2019/?C=N;O=D
+- http://andrej.com/zapiski/MAT-RP-2019/?C=S;O=A
+- http://andrej.com/zapiski/MAT-RP-2019/MAT-PR-2019-10-11/
+- http://andrej.com/zapiski/MAT-RP-2019/MAT-RP-2019-10-04/
+- http://andrej.com/zapiski/MAT-RP-2019/MAT-RP-2019-10-08/
+- http://andrej.com/zapiski/MAT-RP-2019/MAT-RP-2019-10-08/?C=D;O=A
+- http://andrej.com/zapiski/MAT-RP-2019/MAT-RP-2019-10-08/?C=M;O=A
+- http://andrej.com/zapiski/MAT-RP-2019/MAT-RP-2019-10-08/?C=N;O=D
+- http://andrej.com/zapiski/MAT-RP-2019/MAT-RP-2019-10-08/?C=S;O=A
+- http://andrej.com/zapiski/MAT-RP-2019/MAT-RP-2019-10-08/pregledLaTeXa.pdf
+- http://andrej.com/zapiski/MAT-RP-2019/MAT-RP-2019-10-08/pregledLaTeXa.tex
+- http://andrej.com/zapiski/MAT-RP-2019/MAT-RP-2019-10-15/
+- http://andrej.com/zapiski/MAT-RP-2019/MAT-RP-2019-10-18/
+- http://andrej.com/zapiski/MAT-RP-2019/MAT-RP-2019-10-22/
+- http://andrej.com/zapiski/MAT-RP-2019/MAT-RP-2019-10-25/
+- http://andrej.com/zapiski/MAT-RP-2019/MAT-RP-2019-10-29/
+- http://andrej.com/zapiski/MAT-RP-2019/MAT-RP-2019-11-05/
+- http://andrej.com/zapiski/MAT-RP-2019/MAT-RP-2019-11-08/
+- http://andrej.com/zapiski/MAT-RP-2019/MAT-RP-2019-11-08/?C=D;O=A
+- http://andrej.com/zapiski/MAT-RP-2019/MAT-RP-2019-11-08/?C=M;O=A
+- http://andrej.com/zapiski/MAT-RP-2019/MAT-RP-2019-11-08/?C=N;O=D
+- http://andrej.com/zapiski/MAT-RP-2019/MAT-RP-2019-11-08/?C=S;O=A
+- http://andrej.com/zapiski/MAT-RP-2019/MAT-RP-2019-11-08/matematiki/
+- http://andrej.com/zapiski/MAT-RP-2019/MAT-RP-2019-11-08/praktiki/
+- http://andrej.com/zapiski/MAT-RP-2019/MAT-RP-2019-11-12/
+- http://andrej.com/zapiski/MAT-RP-2019/MAT-RP-2019-11-15/
+- http://andrej.com/zapiski/MAT-RP-2019/MAT-RP-2019-11-19/
+- http://andrej.com/zapiski/MAT-RP-2019/MAT-RP-2019-11-19/?C=D;O=A
+- http://andrej.com/zapiski/MAT-RP-2019/MAT-RP-2019-11-19/?C=M;O=A
+- http://andrej.com/zapiski/MAT-RP-2019/MAT-RP-2019-11-19/?C=N;O=D
+- http://andrej.com/zapiski/MAT-RP-2019/MAT-RP-2019-11-19/?C=S;O=A
+- http://andrej.com/zapiski/MAT-RP-2019/MAT-RP-2019-11-19/Prvi%20koraki.nb
+- http://andrej.com/zapiski/MAT-RP-2019/MAT-RP-2019-11-19/Rac%cc%8cunanje.nb
+- http://andrej.com/zapiski/MAT-RP-2019/MAT-RP-2019-11-19/primer.m
+- http://andrej.com/zapiski/MAT-RP-2019/MAT-RP-2019-11-22/
+- http://andrej.com/zapiski/MAT-RP-2019/MAT-RP-2019-11-26/
+- http://andrej.com/zapiski/MAT-RP-2019/MAT-RP-2019-11-29/
+- http://andrej.com/zapiski/MAT-RP-2019/MAT-RP-2019-12-03/
+- http://andrej.com/zapiski/MAT-RP-2019/MAT-RP-2019-12-06/
+- http://andrej.com/zapiski/MAT-RP-2019/MAT-RP-2019-12-06/?C=D;O=A
+- http://andrej.com/zapiski/MAT-RP-2019/MAT-RP-2019-12-06/?C=M;O=A
+- http://andrej.com/zapiski/MAT-RP-2019/MAT-RP-2019-12-06/?C=M;O=D
+- http://andrej.com/zapiski/MAT-RP-2019/MAT-RP-2019-12-06/?C=N;O=A
+- http://andrej.com/zapiski/MAT-RP-2019/MAT-RP-2019-12-06/?C=N;O=D
+- http://andrej.com/zapiski/MAT-RP-2019/MAT-RP-2019-12-06/?C=S;O=A
+- http://andrej.com/zapiski/MAT-RP-2019/MAT-RP-2019-12-06/matematiki/
+- http://andrej.com/zapiski/MAT-RP-2019/MAT-RP-2019-12-06/praktiki/
+- http://andrej.com/zapiski/MAT-RP-2019/MAT-RP-2019-12-10/
+- http://andrej.com/zapiski/MAT-RP-2019/MAT-RP-2019-12-13/
+- http://andrej.com/zapiski/MAT-RP-2019/MAT-RP-2019-12-24/
+- http://andrej.com/zapiski/MAT-RP-2019/MAT-RP-2020-01-07/
+- http://andrej.com/zapiski/MAT-RP-2020/
+- http://andrej.com/zapiski/MGS-2022/
+- http://andrej.com/zapiski/OPB-2014/
+- http://andrej.com/zapiski/PED-POP-2017/
+- http://andrej.com/zapiski/PED-SRDG-2022/
+- http://andrej.com/zapiski/PED-SRDG-2024/
+- http://andrej.com/zapiski/POP-2014/
+- http://andrej.com/zapiski/PRA-PRO2-2016/
+- http://andrej.com/zapiski/PRA-PRO2-2017/
+- http://andrej.com/zapiski/PRA-PRO2-2017/?C=D;O=A
+- http://andrej.com/zapiski/PRA-PRO2-2017/?C=M;O=A
+- http://andrej.com/zapiski/PRA-PRO2-2017/?C=N;O=D
+- http://andrej.com/zapiski/PRA-PRO2-2017/?C=S;O=A
+- http://andrej.com/zapiski/PRA-PRO2-2017/PRA-PRO2-2017-02-14/
+- http://andrej.com/zapiski/PRA-PRO2-2017/PRA-PRO2-2017-02-21/
+- http://andrej.com/zapiski/PRA-PRO2-2017/PRA-PRO2-2017-02-28/
+- http://andrej.com/zapiski/PRA-PRO2-2017/PRA-PRO2-2017-03-07/
+- http://andrej.com/zapiski/PRA-PRO2-2017/PRA-PRO2-2017-03-07/?C=D;O=A
+- http://andrej.com/zapiski/PRA-PRO2-2017/PRA-PRO2-2017-03-07/?C=M;O=A
+- http://andrej.com/zapiski/PRA-PRO2-2017/PRA-PRO2-2017-03-07/?C=N;O=D
+- http://andrej.com/zapiski/PRA-PRO2-2017/PRA-PRO2-2017-03-07/?C=S;O=A
+- http://andrej.com/zapiski/PRA-PRO2-2017/PRA-PRO2-2017-03-07/PRA-PRO2-2017-03-07%20Grafi%20kot%20objekti.pdf
+- http://andrej.com/zapiski/PRA-PRO2-2017/PRA-PRO2-2017-03-07/argumenti.py
+- http://andrej.com/zapiski/PRA-PRO2-2017/PRA-PRO2-2017-03-07/graf1.py
+- http://andrej.com/zapiski/PRA-PRO2-2017/PRA-PRO2-2017-03-07/jurij/
+- http://andrej.com/zapiski/PRA-PRO2-2017/PRA-PRO2-2017-03-14/
+- http://andrej.com/zapiski/PRA-PRO2-2017/PRA-PRO2-2017-03-21/
+- http://andrej.com/zapiski/PRA-PRO2-2017/PRA-PRO2-2017-03-28/
+- http://andrej.com/zapiski/PRA-PRO2-2017/PRA-PRO2-2017-04-04/
+- http://andrej.com/zapiski/PRA-PRO2-2017/PRA-PRO2-2017-05-09/
+- http://andrej.com/zapiski/PRA-PRO2-2017/PRA-PRO2-2017-05-16/
+- http://andrej.com/zapiski/PRA-PRO2-2017/PRA-PRO2-2017-05-23/
+- http://andrej.com/zapiski/PRA-PRO2-2017/PRA-PRO2-2017-06-06/
+- http://andrej.com/zapiski/PRAPRO2-2014/
+- http://andrej.com/zapiski/PRO2-2015/
+- http://andrej.com/zapiski/RACFIZ-2014/
+- http://andrej.com/zapiski/RACFIZ-2015/
+- https://andrej.com/
+- https://andrej.com/assets/cv-andrej-bauer.pdf
+- https://andrej.com/en/
+- https://andrej.com/en/fun.html
+- https://andrej.com/en/objectivism/
+- https://andrej.com/en/research.html
+- https://andrej.com/en/teaching.html
+- https://andrej.com/fun.html
+- https://andrej.com/objectivism/
+- https://andrej.com/research.html
+- https://andrej.com/teaching.html
+
+External Links Found:
+- http://dblp.uni-trier.de/pers/hd/b/Bauer:Andrej
+- http://homotopytypetheory.org/
+- http://math.andrej.com
+- http://math.andrej.com/alg/
+- http://math.andrej.com/category/publications/
+- http://math.andrej.com/category/talks/
+- http://math.andrej.com/rz/
+- http://plzoo.andrej.com
+- http://www.ams.org/mathscinet/search/author.html?mrauthid=640857
+- http://www.andrej.com/zapiski/HoTT-2019/
+- http://www.andromeda-prover.org
+- http://www.arrs.si/en/index.asp
+- http://www.eff-lang.org/
+- http://www.fmf.uni-lj.si/
+- http://www.imfm.si/view?set_language=en
+- http://www.imfm.si/view?set_language=sl
+- http://www.paultaylor.eu/ASD/
+- http://www.random-art.org/
+- http://www.shodokan.si/
+- http://www.uni-lj.si/
+- https://arxiv.org/a/bauer_a_1.html
+- https://bib.cobiss.net/biblioweb/direct/si/slv/cris/15854
+- https://gist.github.com/andrejbauer
+- https://github.com/HoTT/HoTT
+- https://github.com/andrejbauer
+- https://github.com/andrejbauer/coop
+- https://github.com/andrejbauer/homotopy-type-theory-course
+- https://github.com/andrejbauer/marshall
+- https://github.com/danelahman/lograc-2022
+- https://github.com/peterlefanulumsdaine/general-type-theories
+- https://math.andrej.com/
+- https://mathstodon.xyz/@andrejbauer
+- https://orcid.org/0000-0001-5378-0547
+- https://scholar.google.com/citations?user=gty0SkUAAAAJ&hl=en
+- https://tydiform.fmf.uni-lj.si
+- https://ucilnica.fmf.uni-lj.si
+- https://ucilnica.fmf.uni-lj.si/mod/url/view.php?id=56715
+- https://unilj-my.sharepoint.com/:f:/g/personal/andrej_bauer_fmf_uni-lj_si1/Eld0BZlqyXZAqf3KctKjuhYBuHOeMZGsbI4fe8dTTmWi3w
+- https://www.afrl.af.mil/AFOSR/
+- https://www.andrej.com/zapiski/FIZ-RAC-2018/
+- https://www.andrej.com/zapiski/FIZ-RAC-2019/
+- https://www.andrej.com/zapiski/FIZ-RAC-2020/
+- https://www.andrej.com/zapiski/ISRM-LOGRAC-2022/
+- https://www.andrej.com/zapiski/ISRM-PPJ-2019/
+- https://www.andrej.com/zapiski/ISRM-PPJ-2020/
+- https://www.andrej.com/zapiski/ISRM-PPJ-2021/
+- https://www.andrej.com/zapiski/ISRM-PPJ-2022/
+- https://www.andrej.com/zapiski/ISRM-PPJ-2023/
+- https://www.andrej.com/zapiski/ISRM-PPJ-2023/book/
+- https://www.andrej.com/zapiski/MAT-FORMATH-2022/
+- https://www.andrej.com/zapiski/MAT-FORMATH-2024/
+- https://www.andrej.com/zapiski/MAT-FORMATH-2024/book/
+- https://www.andrej.com/zapiski/MAT-LMN-2019/
+- https://www.andrej.com/zapiski/MAT-LMN-2020/
+- https://www.andrej.com/zapiski/MAT-LMN-2021/
+- https://www.andrej.com/zapiski/MAT-LMN-2021/lmn.pdf
+- https://www.andrej.com/zapiski/MAT-LMN-2022/
+- https://www.andrej.com/zapiski/MAT-LMN-2022/lmn.pdf
+- https://www.andrej.com/zapiski/MAT-RP-2018/
+- https://www.andrej.com/zapiski/MAT-RP-2019/
+- https://www.andrej.com/zapiski/MAT-RP-2020/
+- https://www.sicris.si/public/jqm/prg.aspx?id=18055
+- https://www.youtube.com/playlist?list=PL-47DDuiZOMAbPYCabNgo0Qa3HATv9wi3
+- https://www.youtube.com/playlist?list=PL-47DDuiZOMB4wwml-8B3-RFJmckBIOxz
+- https://www.youtube.com/playlist?list=PL-47DDuiZOMB9IQZ9fUyyAgLtM7JzITEY
+- https://www.youtube.com/playlist?list=PL-47DDuiZOMCRDiXDZ1fI0TFLQgQqOdDa
+- https://www.youtube.com/playlist?list=PL-47DDuiZOMDBfb5t8Hd30utd_TopoQLE
+- https://www.youtube.com/playlist?list=PL-47DDuiZOMDRN7vKmDe7MON_jL6uMVBs
+- https://www.youtube.com/user/bauerandrej/playlists
+- https://x.com/andrejbauer
+- https://youtu.be/XtaRkV7PWTA
+- https://youtube.com/playlist?list=PL-47DDuiZOMAsU6LtfF32LC_7b_gl23ex
+- https://youtube.com/playlist?list=PL-47DDuiZOMDIO6TxVXuFVfsPvSs9HKEY
+- mailto:Andrej.Bauer@andrej.com
+
+Pages Visited:
+- 20 pages visited
+
+--- Checking TLS Certificate ---
+Common Name (CN): andrej.com
+Organization (O): None
+Organizational Unit (OU): None
+Country (C): None
+State (ST): None
+Locality (L): None
+
+--- Running API Checks ---
+
+--- Output from API Checks for andrej.com ---
+Enter domain or IP: 
+[+] Shodan Info
+[-] Shodan Error: Access denied (403 Forbidden)
+
+[+] VirusTotal Info
+[-] VirusTotal Error: 'Virustotal' object has no attribute 'domain_report'
+
+
+--- Error for andrej.com ---
+[nltk_data] Downloading package punkt_tab to /Users/arsh/nltk_data...
+[nltk_data]   Package punkt_tab is already up-to-date!
+2025-05-10 22:37:36,224 - INFO - Successfully loaded the spaCy NLP model
+2025-05-10 22:37:36,224 - INFO - Starting crawl of https://andrej.com
+2025-05-10 22:37:36,224 - INFO - Processing https://andrej.com
+2025-05-10 22:37:36,780 - INFO - Successfully fetched content from https://andrej.com
+2025-05-10 22:37:38,448 - INFO - Processing https://andrej.com/fun.html
+2025-05-10 22:37:39,004 - INFO - Successfully fetched content from https://andrej.com/fun.html
+2025-05-10 22:37:39,784 - INFO - Processing https://andrej.com/
+2025-05-10 22:37:40,342 - INFO - Successfully fetched content from https://andrej.com/
+2025-05-10 22:37:41,752 - INFO - Processing https://andrej.com/teaching.html
+2025-05-10 22:37:42,299 - INFO - Successfully fetched content from https://andrej.com/teaching.html
+2025-05-10 22:37:44,503 - INFO - Processing https://andrej.com/en/
+2025-05-10 22:37:45,056 - INFO - Successfully fetched content from https://andrej.com/en/
+2025-05-10 22:37:46,522 - INFO - Processing https://andrej.com/en/fun.html
+2025-05-10 22:37:47,069 - INFO - Successfully fetched content from https://andrej.com/en/fun.html
+2025-05-10 22:37:47,835 - INFO - Processing https://andrej.com/research.html
+2025-05-10 22:37:48,431 - INFO - Successfully fetched content from https://andrej.com/research.html
+2025-05-10 22:38:00,399 - INFO - Processing http://andrej.com/zapiski/
+2025-05-10 22:38:00,890 - INFO - Successfully fetched content from http://andrej.com/zapiski/
+2025-05-10 22:38:01,823 - INFO - Processing http://andrej.com/zapiski/MAT-RP-2019/
+2025-05-10 22:38:02,334 - INFO - Successfully fetched content from http://andrej.com/zapiski/MAT-RP-2019/
+2025-05-10 22:38:03,163 - INFO - Processing http://andrej.com/zapiski/MAT-RP-2019/MAT-RP-2019-11-08/
+2025-05-10 22:38:03,635 - INFO - Successfully fetched content from http://andrej.com/zapiski/MAT-RP-2019/MAT-RP-2019-11-08/
+2025-05-10 22:38:04,385 - INFO - Processing http://andrej.com/zapiski/MAT-RP-2019/MAT-RP-2019-11-19/
+2025-05-10 22:38:04,862 - INFO - Successfully fetched content from http://andrej.com/zapiski/MAT-RP-2019/MAT-RP-2019-11-19/
+2025-05-10 22:38:05,635 - INFO - Processing http://andrej.com/zapiski/MAT-RP-2019/?C=N;O=D
+2025-05-10 22:38:06,091 - INFO - Successfully fetched content from http://andrej.com/zapiski/MAT-RP-2019/?C=N;O=D
+2025-05-10 22:38:06,914 - INFO - Processing http://andrej.com/zapiski/?C=N;O=D
+2025-05-10 22:38:07,386 - INFO - Successfully fetched content from http://andrej.com/zapiski/?C=N;O=D
+2025-05-10 22:38:08,224 - INFO - Processing http://andrej.com/zapiski/MAT-POP-2016/
+2025-05-10 22:38:08,684 - INFO - Successfully fetched content from http://andrej.com/zapiski/MAT-POP-2016/
+2025-05-10 22:38:09,465 - INFO - Processing http://andrej.com/zapiski/PRA-PRO2-2017/
+2025-05-10 22:38:09,924 - INFO - Successfully fetched content from http://andrej.com/zapiski/PRA-PRO2-2017/
+2025-05-10 22:38:10,704 - INFO - Processing http://andrej.com/zapiski/MAT-RP-2019/MAT-RP-2019-10-08/
+2025-05-10 22:38:11,185 - INFO - Successfully fetched content from http://andrej.com/zapiski/MAT-RP-2019/MAT-RP-2019-10-08/
+2025-05-10 22:38:11,931 - INFO - Processing http://andrej.com/zapiski/MAT-RP-2019/MAT-RP-2019-12-06/
+2025-05-10 22:38:12,406 - INFO - Successfully fetched content from http://andrej.com/zapiski/MAT-RP-2019/MAT-RP-2019-12-06/
+2025-05-10 22:38:13,148 - INFO - Processing http://andrej.com/zapiski/ISRM-PPJ-2023/
+2025-05-10 22:38:13,630 - INFO - Successfully fetched content from http://andrej.com/zapiski/ISRM-PPJ-2023/
+2025-05-10 22:38:14,416 - INFO - Processing http://andrej.com/zapiski/PRA-PRO2-2017/PRA-PRO2-2017-03-07/
+2025-05-10 22:38:14,890 - INFO - Successfully fetched content from http://andrej.com/zapiski/PRA-PRO2-2017/PRA-PRO2-2017-03-07/
+2025-05-10 22:38:15,641 - INFO - Processing http://andrej.com/zapiski/MAT-RP-2019/MAT-RP-2019-12-06/?C=M;O=A
+2025-05-10 22:38:16,105 - INFO - Successfully fetched content from http://andrej.com/zapiski/MAT-RP-2019/MAT-RP-2019-12-06/?C=M;O=A

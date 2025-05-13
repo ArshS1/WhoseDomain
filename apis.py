@@ -1,5 +1,6 @@
 # WhoseDomain - 2025
 
+# This is a script that queries Shodan and VirusTotal for information about a given domain or IP address.
 import shodan
 from virustotal_python import Virustotal
 import json

@@ -1,5 +1,7 @@
 # WhoseDomain - 2025
 
+# This script uses Docker to run the WhoseDomain tool for domain attribution. (Original Tool)
+
 import subprocess
 import os
 

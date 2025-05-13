@@ -1,3 +1,7 @@
+# WhoseDomain - 2025
+
+# It also fetches the TLS certificate for the domain and extracts detailed information from it.
+
 import ssl
 import socket
 from OpenSSL import crypto
